@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+  <!-- Подключаем шрифты Roboto и Roboto Slab c сервиса google -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <!-- Подключаем иконочный шрифт fontawesome -->
+  <link rel="stylesheet" href="libs/@fortawesome/fontawesome-free/css/all.min.css">
+  <!-- Подключаем наш основной стиль, с которым будем работать -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>MY GRID-TEMPLATE</title>
+  <link rel="stylesheet" href="src/scss/presets/_skin.scss">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="header-content">
+    <div class="header-content__container">
+
+      <h1 class="header-content__title">WE ARE REAL <span class="header-content__title--span">WEB-DEVELOPERS</span></h1>
+
+      <div class="header-content__actions">
+        <a href="#" class="btn btn--opacity">Learn more</a>
+        <a href="#" class="btn btn--opacity">Get started</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-menu">
+    <div class="header-menu__container">
+
+      <div class="header-menu__logo">
+        <a class="header-menu__logo--link" href="#"><span class="header-menu__logo--span">SITE</span><span
+          class="header-menu__logo--span-logo">LOGO</span></a>
+      </div>
+
+      <nav class="header__navbar">
+        <ol class="header__navbar--list">
+          <li class="header__navbar--item"><a class="header__navbar--link" href="#">Home</a></li>
+          <li class="header__navbar--item"><a class="header__navbar--link" href="#">About</a></li>
+          <li class="header__navbar--item"><a class="header__navbar--link" href="#">Contacts</a></li>
+        </ol>
+      </nav>
+
+      <div class="header-navbar__hamburger">
+        <span class="header-navbar__btn-row"></span>
+        <span class="header-navbar__btn-row"></span>
+        <span class="header-navbar__btn-row"></span>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="header--overlay"></div>
+</header>
+
+<main>
+  <section class="section-skills">
+    <h2 class="visually-hidden"></h2>
+
+    <div class="grid-container">
+
+      <div class="html">
+        <h3 class="html__title"><a class="html__link" href="#">HTML</a></h3>
+        <div class="html__image" style="background-image: url(assets/images/img-html.png);"></div>
+        <div class="html__overlay" style="background-color: #2d3651; opacity: 0.8;"></div>
+      </div>
+
+      <div class="css">
+        <h3 class="css__title"><a class="css__link" href="#">CSS</a></h3>
+        <div class="css__image" style="background-image: url(assets/images/img-css.png);"></div>
+        <div class="css__overlay" style="background-color: #2d3651; opacity: 0.8;"></div>
+      </div>
+
+      <div class="markup">
+        <h3 class="markup__title"><a class="markup__link" href="#">Markup</a></h3>
+        <div class="markup__image" style="background-image: url(assets/images/img-markup.png);"></div>
+        <div class="markup__overlay" style="background-color: #2d3651; opacity: 0.8;"></div>
+      </div>
+
+      <div class="web-design">
+        <h3 class="web-design__title"><a class="web-design__link" href="#">Web-Design</a></h3>
+        <div class="web-design__image" style="background-image: url(assets/images/img-webdesign.png);"></div>
+        <div class="web-design__overlay" style="background-color: #2d3651; opacity: 0.8;"></div>
+      </div>
+
+      <div class="quality-assurance">
+        <h3 class="quality-assurance__title"><a class="quality-assurance__link" href="#">Quality Assurance</a></h3>
+        <div class="quality-assurance__image" style="background-image: url(assets/images/img-qa.png);"></div>
+        <div class="quality-assurance__overlay" style="background-color: #2d3651; opacity: 0.8;"></div>
+      </div>
+
+      <div class="codding">
+        <h3 class="codding__title"><a class="codding__link" href="#">Codding</a></h3>
+        <div class="codding__image" style="background-image: url(assets/images/img-codding.png);"></div>
+        <div class="codding__overlay" style="background-color: #2d3651; opacity: 0.8;"></div>
+      </div>
+
+      <div class="adaptability">
+        <h3 class="adaptability__title"><a class="adaptability__link" href="#">Adaptability</a></h3>
+        <div class="adaptability__image" style="background-image: url(assets/images/img-adaptability.png);"></div>
+        <div class="adaptability__overlay" style="background-color: #2d3651; opacity: 0.8;"></div>
+      </div>
+
+      <div class="php">
+        <h3 class="php__title"><a class="php__link" href="#">PHP</a></h3>
+        <div class="php__image" style="background-image: url(assets/images/img-php.png);"></div>
+        <div class="php__overlay" style="background-color: #2d3651; opacity: 0.8;"></div>
+      </div>
+
+      <div class="seo">
+        <h3 class="seo__title"><a class="seo__link" href="#">SEO</a></h3>
+        <div class="seo__image" style="background-image: url(assets/images/img-seo.png);"></div>
+        <div class="seo__overlay" style="background-color: #2d3651; opacity: 0.8;"></div>
+      </div>
+    </div>
+
+    <div class="skills-btn__box">
+      <a class="btn-classic btn--dark skills__btn--item" href="#">View all skills...</a>
+    </div>
+  </section>
+
+  <section class="section-about">
+    <h2 class="visually-hidden"></h2>
+    <div class="about-box">
+
+      <div class="about__container">
+
+        <div class="about__text">
+          <h2 class="about__title">Are You Ready? <br> <span class="about__title--span">Let's start!</span></h2>
+
+          <div class="about__description--box">
+            <p class="about__description--item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+              voluptates commodi eligendi perspiciatis non ipsam numquam, perferendis fugiat amet molestias provident
+              unde, deleniti quo ducimus placeat voluptas!</p>
+
+            <p class="about__description--item">
+              Quisquam voluptatum quae veritatis quas odio dolores quis voluptas asperiores ex obcaecati reiciendis
+              quidem ducimus et doloribus sed tempore, unde beatae aut consectetur eligendi ratione repellendus nulla
+              pariatur. Explicabo enim officia iure blanditiis eos, velit.
+            </p>
+
+            <p class="about__description--item">Culpa consequatur labore, adipisci asperiores impedit tenetur quam ab
+              dicta recusandae quas nobis reprehenderit necessitatibus placeat corporis enim aliquid sequi saepe. Quos
+              amet, aliquam, reiciendis porro eos voluptates maiores. Voluptas dolor quidem tempora illum laboriosam
+              dolorum neque tenetur.</p>
+
+            <p class="about__description--item">
+              Alias voluptates commodi eligendi perspiciatis non ipsam numquam, perferendis fugiat amet molestias
+              provident unde, deleniti quo ducimus placeat voluptas! Quos amet, aliquam, reiciendis porro eos voluptates
+              maiores.
+            </p>
+          </div>
+        </div>
+
+        <div class="about__picture">
+          <img class="about__image" src="assets/images/img-lamp-webdev.png" alt="image">
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="section-form">
+    <h2 class="visually-hidden"></h2>
+    <div class="form__container">
+
+      <div class="form__name">
+        <input type="text" class="form__input--name" placeholder="Your name...">
+      </div>
+
+      <div class="form__email">
+        <input type="text" class="form__input--email" placeholder="Your email...">
+      </div>
+
+      <div class="form__subscribe">
+        <button type="submit" class="btn-form btn--light">Subscribe</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-posts">
+    <h2 class="posts__title">Some section of posts</h2>
+
+    <div class="posts__box">
+
+      <div class="group-1">
+        <a class="group-1__link" href="#">
+          <div class="group-1__image-block"><img class="group-1__image" src="assets/images/img-post-1.png" alt="image">
+          </div>
+
+          <div class="group-1__text-box">
+            <h3 class="group-1__title--item">Nostrum quod fugiat odio perspiciatis</h3>
+            <p class="group-1__description">Minus ad voluptas non, ducimus suscipit temporibus explicabo! Inventore
+              dolorum, debitis eligendi earum in corrupti consectetur quam nesciunt facilis explicabo?</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="group-2">
+        <a class="group-2__link" href="#">
+          <div class="group-2__image-block"><img class="group-2__image" src="assets/images/img-post-2.png" alt="image">
+          </div>
+
+          <div class="group-2__text-box">
+            <h3 class="group-2__title--item">Lorem ipsum dolor amet</h3>
+            <p class="group-2__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil aperiam
+              ipsum obcaecati, quisquam. Reprehenderit corporis neque architecto, id, vero voluptate.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="group-3">
+        <a class="group-3__link" href="#">
+          <div class="group-3__image-block"><img class="group-3__image" src="assets/images/img-post-3.png" alt="image">
+          </div>
+          <div class="group-3__text-box">
+            <h3 class="group-3__title--item">Eum quibusdam voluptas explicabo, commodi</h3>
+            <p class="group-3__description">Quo sit explicabo dolore, nihil soluta adipisci deleniti consequatur
+              voluptate cumque, quaerat minima repudiandae consectetur incidunt dolorum, culpa, voluptates ab!</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="group-4">
+        <a class="group-4__link" href="#">
+          <div class="group-4__image-block"><img class="group-4__image" src="assets/images/img-post-4.png" alt="image">
+          </div>
+          <div class="group-4__text-box">
+            <h3 class="group-4__title--item">Voluptate fuga earum</h3>
+            <p class="group-4__description">Ullam saepe maiores magni, consequatur perferendis earum veniam officiis
+              sapiente a veritatis corporis voluptatum repellendus, autem dolore molestiae suscipit quia!</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="group-5">
+        <a class="group-5__link" href="#">
+          <div class="group-5__image-block"><img class="group-5__image" src="assets/images/img-post-5.png" alt="image">
+          </div>
+          <div class="group-5__text-box">
+            <h3 class="group-5__title--item">Facere rerum aliquam nostrum vel</h3>
+            <p class="group-5__description">Quo sit explicabo dolore, nihil soluta adipisci deleniti consequatur
+              voluptate cumque, quaerat minima repudiandae consectetur incidunt dolorum, culpa, voluptates ab!</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="group-6">
+        <a class="group-6__link" href="#">
+          <div class="group-6__image-block"><img class="group-6__image" src="assets/images/img-post-6.png" alt="image">
+          </div>
+          <div class="group-6__text-box">
+            <h3 class="group-6__title--item">Ratione reprehenderit necessitatibus, labore vel</h3>
+            <p class="group-6__description">Ad est voluptate sunt, cupiditate, voluptatem dignissimos corporis unde
+              cumque distinctio, ab odio dolores molestias non cum fugiat enim voluptatibus!</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="posts-btn__box">
+      <a class="btn-classic btn--dark posts__btn--item" href="#">View all posts...</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__svg--list">
+      <a class="footer__svg__item" href="#"><i class="fab fa-facebook-square"></i></a>
+      <a class="footer__svg__item" href="#"><i class="fab fa-google-plus-square"></i></a>
+      <a class="footer__svg__item" href="#"><i class="fab fa-twitter-square"></i></a>
+      <a class="footer__svg__item" href="#"><i class="fab fa-pinterest-square"></i></a>
+      <a class="footer__svg__item" href="#"><i class="fab fa-flickr"></i></a>
+    </div>
+
+    <div class="footer__copy">
+      <p class="footer__copy--text-1">WE ARE REAL</p>
+      <p class="footer__copy--text-2">WEB-DEVELOPERS</p>
+    </div>
+
+  </div>
+</footer>
+
+<!-- Подключаем библиотеку jquery, необходимую для работы нашего основного скрипта -->
+<script src="libs/jquery/dist/jquery.min.js"></script>
+<!-- Подключаем наш основной скрипт, с которым будем работать -->
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

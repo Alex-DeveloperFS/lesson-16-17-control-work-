@@ -1,0 +1,210 @@
+@use "../../presets" as *;
+@use "../../mixins/index" as *;
+
+
+.section-about {
+  background-color: $color-gray-light;
+  margin-top: 40px;
+  padding-top: 79px;
+  padding-bottom: 63px;
+
+  @include lg {
+    padding-top: 0;
+    padding-bottom: 74px;
+  }
+
+  @include md {
+    padding-bottom: 53px;
+  }
+
+  @include sm {
+    margin-top: 20px;
+    padding-bottom: 67px;
+  }
+}
+
+.about {
+  &__container {
+    @extend %container;
+    display: grid;
+    grid-template-columns: 1fr 271px;
+    grid-template-rows: 1fr;
+    grid-auto-flow: row;
+    gap: 100px;
+    grid-template-areas:
+    " about__text about__picture";
+
+    @include lg {
+      letter-spacing: 3.43px;
+      gap: 10px 40px;
+    }
+
+    @include sm {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas:
+    "about__text"
+    "about__picture";
+    }
+  }
+
+  &__text {
+    grid-area: about__text;
+  }
+
+  &__title {
+    font-size: 40px;
+    letter-spacing: 3.5px;
+    line-height: 48px;
+    color: $color-primary;
+    font-weight: 700;
+    font-family: $font-header;
+    margin-top: 20px;
+
+    @include lg {
+      font-size: 32px;
+      line-height: 40px;
+      margin-top: 80px;
+      letter-spacing: 2.67px;
+    }
+
+    @include md {
+      letter-spacing: 2.2px;
+      font-size: 24px;
+      line-height: 32px;
+      margin-top: 59px;
+      margin-left: 2px;
+    }
+
+    @include sm {
+      text-align: center;
+      margin-top: 57px;
+
+    }
+
+    &--span {
+      letter-spacing: 4.3px;
+
+      @include lg {
+        letter-spacing: 3.43px;
+      }
+
+      @include md {
+        letter-spacing: 2.5px;
+      }
+    }
+  }
+
+  &__description--box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin-top: 50px;
+    position: relative;
+
+    @include lg {
+      margin-top: 33px;
+      max-width: 630px;
+    }
+
+    @include md {
+      max-width: 414px;
+      margin-top: 24px;
+      margin-left: 2px;
+    }
+
+    @include sm {
+      max-width: 532px;
+      margin-top: 22px;
+    }
+  }
+
+  &__description--item {
+    font-size: 18px;
+    letter-spacing: 0.99px;
+    line-height: 24px;
+    color: $color-gray;
+    font-weight: 400;
+    font-family: $font-main;
+
+    @include lg {
+      letter-spacing: 1px;
+    }
+
+    @include lg {
+      font-size: 16px;
+      letter-spacing: 0.8px;
+    }
+    @include md {
+      margin-top: 1px;
+    }
+  }
+    &__text p:first-of-type::after {
+      position: absolute;
+      top: 0;
+      width: 2px;
+      height: 200px;
+      content: "";
+      background-color: black;
+      opacity: 10%;
+      right: -58px;
+
+
+      @include lg {
+        top: -6px;
+        right: -25px;
+      }
+
+      @include md {
+        top: 5px;
+        right: -20px;
+      }
+      @include sm {
+        display: none;
+      }
+    }
+
+    &__picture {
+      grid-area: about__picture;
+      margin-top: 22px;
+      display: grid;
+      align-content: center;
+      justify-items: center;
+
+      @include lg {
+        margin-top: -26px;
+        margin-left: 15px;
+      }
+
+      @include md {
+        margin-top: -246px;
+        margin-left: 33px;
+      }
+
+      @include sm {
+        margin-top: 27px;
+        margin-left: 25px;
+      }
+    }
+
+    &__image {
+
+      @include lg {
+        max-width: 255px;
+        max-height: 459px;
+      }
+
+      @include md {
+        max-width: 236px;
+        max-height: 425px;
+      }
+     @include sm {
+        max-width: 271px;
+        max-height: 487px;
+      }
+
+    }
+
+
+  }
+

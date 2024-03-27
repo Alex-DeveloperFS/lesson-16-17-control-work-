@@ -1,0 +1,80 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+@use "../../common" as *;
+
+.header-content {
+  position: relative;
+  z-index: 1;
+
+  &__container {
+    @extend %container;
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 300;
+    font-family: $font-header;
+    font-size: 60px;
+    letter-spacing: 4.7px;
+    color: $color-white;
+    line-height: 1.2em;
+    margin: 0 auto;
+    margin-top: 299px;
+
+    @include lg {
+      letter-spacing: 3.1px;
+      font-size: 40px;
+      margin-left: 4px;
+      margin-top: 163px;
+    }
+
+    @include md {
+      margin-top: 78px;
+      letter-spacing: 2.32px;
+      font-size: 30px;
+      font-weight: 300;
+      margin-left: 2px;
+    }
+
+
+    @include sm {
+      max-width: 326px;
+      margin-top: 270px;
+      margin-left: 101px;
+      letter-spacing: 2.32px;
+      font-size: 30px;
+      font-weight: 300;
+      line-height: 38px;
+
+      }
+      &--span {
+        @include sm {
+          letter-spacing: 2.5px;
+          margin-left: 9px;
+        }
+      }
+    }
+
+    &__actions {
+      display: flex;
+      justify-content: center;
+      gap: $gap;
+      margin-top: 53px;
+      margin-left: 4px;
+      margin: 0 auto;
+
+      @include lg {
+        margin-top: 43px;
+      }
+
+      @include md {
+        margin-top: 30px;
+        margin-left: 1px;
+      }
+
+      @include sm {
+        margin-top: 38px;
+        margin-left: 2px;
+      }
+    }
+  }

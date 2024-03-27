@@ -1,0 +1,599 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+@use "../../common" as *;
+
+.grid-container {
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-flow: row;
+  gap: 10px 10px;
+  grid-template-areas:
+    "html html css markup"
+    "web-design quality-assurance quality-assurance codding"
+    "adaptability php seo codding";
+
+  @include lg {
+    margin-top: 9px;
+    padding-right: 10px;
+    padding-left: 10px;
+    gap: 10px 10px;
+    grid-template-areas:
+        "html html css"
+        "markup web-design web-design"
+        "quality-assurance quality-assurance codding"
+        "adaptability php codding"
+        "adaptability seo seo";
+    grid-template-columns: 1fr minmax(auto, 310px) 1fr;
+    grid-template-rows: minmax(auto, 350px) 1fr 1fr 1fr 1fr;
+  }
+
+  @include md {
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: minmax(auto, 350px) minmax(auto, 350px) minmax(auto, 350px) minmax(auto, 350px) minmax(auto, 360px) minmax(auto, 350px);
+    grid-template-areas:
+      "html  css"
+      "markup css"
+      "web-design web-design"
+      "quality-assurance codding"
+      "quality-assurance adaptability"
+      "php seo";
+  }
+
+  @include sm {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, minmax(auto, 350px));
+    grid-template-areas:
+      "html"
+      "css"
+      "markup"
+      "web-design"
+      "quality-assurance"
+      "codding"
+      "adaptability"
+      "php"
+      "seo";
+    margin-top: 19px;
+    padding-right: 22px;
+    padding-left: 22px;
+    gap: 20px 10px;
+  }
+}
+
+.html {
+  grid-area: html;
+  @include skills;
+
+
+  &__image {
+    @include skills__image;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
+  &__link {
+    @include skills__link;
+    margin-top: 3px;
+    margin-left: 4px;
+
+    @include lg {
+      margin-top: 1px;
+    }
+
+    @include md {
+      letter-spacing: 1.5px;
+      font-size: 18px;
+      font-weight: 700;
+      margin-left: 0;
+      margin-top: 2px;
+    }
+
+    @include sm {
+      margin-top: 0px;
+      letter-spacing: 1.75px;
+    }
+  }
+
+  &__overlay {
+    @include skills__overlay;
+  }
+}
+
+.html:hover .html__overlay {
+  opacity: 95%;
+}
+
+.html:hover .html__image {
+  scale: 1.2;
+}
+
+.html:hover .html__link {
+  color: $color-accent;
+}
+
+.css {
+  grid-area: css;
+  @include skills;
+
+  &__image {
+    @include skills__image;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__link {
+    @include skills__link;
+    margin-top: 2px;
+
+
+    @include lg {
+      margin-top: 1px;
+      margin-left: 4px;
+    }
+
+    @include md {
+      margin-left: -1px;
+      letter-spacing: 1.5px;
+    }
+    @include sm {
+      margin-top: 0;
+      letter-spacing: 1px;
+      margin-left: 2px;
+    }
+
+  }
+
+  &__overlay {
+    @include skills__overlay;
+  }
+}
+
+.css:hover .css__overlay {
+  opacity: 95%;
+}
+
+.css:hover .css__image {
+  scale: 1.2;
+}
+
+.css:hover .css__link {
+  color: $color-accent;
+}
+
+.markup {
+  grid-area: markup;
+  @include skills;
+
+  &__image {
+    @include skills__image;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__link {
+    @include skills__link;
+    margin-top: 1px;
+    margin-left: 2px;
+
+
+    @include lg {
+      margin-top: 0px;
+      margin-left: 4px;
+      letter-spacing: 2.5px;
+    }
+
+    @include md {
+      margin-top: 2px;
+      margin-left: -1px;
+      letter-spacing: 1.5px;
+    }
+    @include sm {
+      margin-top: 0;
+      letter-spacing: 1.4px;
+      margin-left: 2px;
+    }
+  }
+
+  &__overlay {
+    @include skills__overlay;
+  }
+}
+
+.markup:hover .markup__overlay {
+  opacity: 95%;
+}
+
+.markup:hover .markup__image {
+  scale: 1.2;
+}
+
+.markup:hover .markup__link {
+  color: $color-accent;
+}
+
+.web-design {
+  grid-area: web-design;
+  @include skills;
+
+  &__image {
+    @include skills__image;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__link {
+    @include skills__link;
+    letter-spacing: 2.7px;
+    margin-top: 2px;
+    margin-left: 5px;
+
+
+    @include lg {
+      margin-top: -1px;
+      margin-left: 6px;
+      letter-spacing: 2.5px;
+    }
+    @include md {
+
+      letter-spacing: 1.9px;
+      font-size: 18px;
+      margin-top: -20px;
+      margin-left: 0px;
+    }
+
+    @include sm {
+      margin-top: 0;
+      letter-spacing: 1.75px;
+      margin-left: 2px;
+    }
+  }
+
+  &__overlay {
+    @include skills__overlay;
+  }
+}
+
+.web-design:hover .web-design__overlay {
+  opacity: 95%;
+}
+
+.web-design:hover .web-design__image {
+  scale: 1.2;
+}
+
+.web-design:hover .web-design__link {
+  color: $color-accent;
+}
+
+.quality-assurance {
+  grid-area: quality-assurance;
+  @include skills;
+
+  &__image {
+    @include skills__image;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__link {
+    @include skills__link;
+    letter-spacing: 2.6px;
+    margin-top: 2px;
+    margin-left: 1px;
+
+    @include lg {
+      margin-top: -1px;
+      margin-left: 3px;
+      letter-spacing: 2.4px;
+    }
+    @include md {
+      letter-spacing: 1.9px;
+      font-size: 18px;
+      margin-top: 3px;
+      margin-left: 0px;
+    }
+    @include sm {
+      margin-top: 0;
+      letter-spacing: 1.75px;
+      margin-left: 3px;
+    }
+  }
+
+  &__overlay {
+    @include skills__overlay;
+  }
+}
+
+.quality-assurance:hover .quality-assurance__overlay {
+  opacity: 95%;
+}
+
+.quality-assurance:hover .quality-assurance__image {
+  scale: 1.2;
+}
+
+.quality-assurance:hover .quality-assurance__link {
+  color: $color-accent;
+}
+
+.codding {
+  grid-area: codding;
+  @include skills;
+
+  &__image {
+    @include skills__image;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__link {
+    @include skills__link;
+    letter-spacing: 2.6px;
+    margin-top: 2px;
+
+    @include lg {
+      margin-top: 0px;
+      margin-left: 3px;
+      letter-spacing: 2.4px;
+    }
+
+    @include md {
+      margin-top: 0;
+      margin-left: -1px;
+      letter-spacing: 1.4px;
+    }
+    @include sm {
+      margin-top: 0;
+      letter-spacing: 1.3px;
+      margin-left: 2px;
+    }
+  }
+
+  &__overlay {
+    @include skills__overlay;
+  }
+}
+
+.codding:hover .codding__overlay {
+  opacity: 95%;
+}
+
+.codding:hover .codding__image {
+  scale: 1.2;
+}
+
+.codding:hover .codding__link {
+  color: $color-accent;
+}
+
+.adaptability {
+  grid-area: adaptability;
+  @include skills;
+
+  &__image {
+    @include skills__image;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__link {
+    @include skills__link;
+    letter-spacing: 2.6px;
+    margin-left: 5px;
+    margin-top: 2px;
+
+    @include lg {
+      margin-top: 0px;
+      margin-left: 3px;
+      letter-spacing: 2.4px;
+    }
+
+    @include md {
+      margin-top: 1px;
+      margin-left: 0px;
+      letter-spacing: 1.4px;
+    }
+    @include sm {
+      margin-top: 0;
+      letter-spacing: 1.5px;
+      margin-left: 2px;
+    }
+  }
+
+  &__overlay {
+    @include skills__overlay;
+  }
+}
+
+.adaptability:hover .adaptability__overlay {
+  opacity: 95%;
+}
+
+.adaptability:hover .adaptability__image {
+  scale: 1.2;
+}
+
+.adaptability:hover .adaptability__link {
+  color: $color-accent
+}
+
+.php {
+  grid-area: php;
+  @include skills;
+
+  &__image {
+    @include skills__image;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__link {
+    @include skills__link;
+    margin-top: 2px;
+    margin-left: 6px;
+
+    @include lg {
+      margin-top: 1px;
+      margin-left: 4px;
+      letter-spacing: 3.3px;
+    }
+    @include md {
+      margin-left: -1px;
+      letter-spacing: 1.3px;
+    }
+    @include sm {
+      margin-top: 2px;
+      letter-spacing: 1.3px;
+      margin-left: -21px;
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $color-primary;
+    opacity: 80%;
+    transition: 0.5s;
+  }
+}
+
+.php:hover .php__overlay {
+  opacity: 95%;
+}
+
+.php:hover .php__image {
+  scale: 1.2;
+}
+
+.php:hover .php__link {
+  color: $color-accent
+}
+
+.seo {
+  grid-area: seo;
+  @include skills;
+  min-height: 350px;
+
+  &__image {
+    @include skills__image;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__link {
+    @include skills__link;
+    margin-top: 2px;
+
+    @include lg {
+      margin-top: 1px;
+      margin-left: 5px;
+      letter-spacing: 2.2px;
+    }
+
+    @include md {
+      margin-left: -1px;
+      letter-spacing: 1.3px;
+    }
+    @include sm {
+      margin-top: 0;
+      letter-spacing: 1.75px;
+      margin-left: 3px;
+    }
+  }
+
+  &__overlay {
+    @include skills__overlay;
+  }
+}
+
+.seo:hover .seo__overlay {
+  opacity: 95%;
+}
+
+.seo:hover .seo__image {
+  scale: 1.2;
+}
+
+.seo:hover .seo__link {
+  color: $color-accent;
+}
+
+.skills-btn__box {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 2px;
+
+  @include sm {
+    max-width: 542px;
+    margin-top: 20px;
+    margin-right: 21px;
+    margin-left: 11px;
+    padding-left: 2px;
+  }
+
+
+}
+
+.skills__btn--item {
+  padding-left: 0;
+  letter-spacing: 1.8px;
+
+  @include lg {
+    padding-top: 7px;
+    letter-spacing: 2px;
+    min-height: 64px;
+    padding-left: 3px;
+  }
+
+  @include md {
+    min-height: 60px;
+    margin-top: 1px;
+    padding-top: 0;
+    padding-left: 2px;
+    margin-left: 9px;
+
+  }
+  @include sm {
+    min-height: 60px;
+ width: 100%;
+    letter-spacing: 1.8px;
+    padding-bottom: 2px;
+  }
+}

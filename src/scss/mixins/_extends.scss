@@ -1,0 +1,90 @@
+@use "../presets" as *;
+
+%container {
+  width: min(100% - $gap-x2, $container-size);
+  margin-inline: auto;
+}
+
+%grid-item {
+  grid-area: html;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+}
+
+%grid-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  background-position: 50% 50%;
+  transition: 0.5s;
+  background-size: cover;
+}
+
+%grid-title {
+  display: flex;
+  justify-content: center;
+}
+
+%grid-link {
+  transition: 0.5s;
+  z-index: 2;
+  padding: 20px;
+  transition: color 0.5s;
+}
+
+%grid-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $color-primary;
+  opacity: 80%;
+  transition: 0.5s;
+}
+
+
+%posts__title--item {
+  font-size: 18px;
+  letter-spacing: 1.3px;
+  line-height: 20px;
+  color: $color-gray;
+  font-weight: 700;
+  font-family: $font-main;
+  text-align: center;
+}
+
+%posts__description {
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-gray;
+  font-weight: 400;
+  font-family: $font-main;
+  text-align: center;
+}
+
+
+%posts__image-block {
+  transition: 0.5s;
+  overflow: hidden;
+  position: relative;
+  height: 300px;
+}
+
+%posts__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-position: 50% 50%;
+  background-size: cover;
+  transition: 0.5s;
+}
