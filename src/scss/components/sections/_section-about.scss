@@ -1,7 +1,6 @@
 @use "../../presets" as *;
 @use "../../mixins/index" as *;
 
-
 .section-about {
   background-color: $color-gray-light;
   margin-top: 40px;
@@ -11,10 +10,12 @@
   @include lg {
     padding-top: 0;
     padding-bottom: 74px;
+    margin-top: 42px;
   }
 
   @include md {
     padding-bottom: 53px;
+    margin-top: 41px;
   }
 
   @include sm {
@@ -62,31 +63,31 @@
     margin-top: 20px;
 
     @include lg {
+      margin-top: 79px;
+      letter-spacing: 2.88px;
       font-size: 32px;
       line-height: 40px;
-      margin-top: 80px;
-      letter-spacing: 2.67px;
+      margin-left: 0px;
     }
 
     @include md {
       letter-spacing: 2.2px;
       font-size: 24px;
       line-height: 32px;
-      margin-top: 59px;
+      margin-top: 58px;
       margin-left: 2px;
     }
 
     @include sm {
       text-align: center;
       margin-top: 57px;
-
     }
 
     &--span {
       letter-spacing: 4.3px;
 
       @include lg {
-        letter-spacing: 3.43px;
+        letter-spacing: 3.36px;
       }
 
       @include md {
@@ -103,13 +104,13 @@
     position: relative;
 
     @include lg {
-      margin-top: 33px;
+      margin-top: 34px;
       max-width: 630px;
     }
 
     @include md {
       max-width: 414px;
-      margin-top: 24px;
+      margin-top: 23px;
       margin-left: 2px;
     }
 
@@ -128,7 +129,7 @@
     font-family: $font-main;
 
     @include lg {
-      letter-spacing: 1px;
+      letter-spacing: 1.8px;
     }
 
     @include lg {
@@ -148,7 +149,6 @@
       background-color: black;
       opacity: 10%;
       right: -58px;
-
 
       @include lg {
         top: -6px;
@@ -177,7 +177,7 @@
       }
 
       @include md {
-        margin-top: -246px;
+        margin-top: -252px;
         margin-left: 33px;
       }
 
@@ -202,9 +202,6 @@
         max-width: 271px;
         max-height: 487px;
       }
-
     }
-
-
   }
 

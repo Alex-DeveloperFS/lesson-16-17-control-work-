@@ -16,7 +16,15 @@
       margin-right: -14px;
       gap: 20px;
     }
+    @include md {
+      position: absolute;
+      top: 93px;
+      right: 30px;
+      background-color: rgba($color-gray-dark, 1);
+      display: none;
+    }
   }
+
 
   &--link {
     font-size: 1.125rem;
@@ -27,28 +35,34 @@
     padding: 10px;
     transition: 0.3s;
 
+    @include md {
+      padding: 20px;
+    }
+
     &:hover, &:focus {
       color: $color-accent;
     }
   }
-
-  @include md {
-    display: none;
-  }
 }
 
-
-.header-navbar__hamburger{
-  position: relative;
+.header-navbar__hamburger {
+  position: absolute;
   width: 30px;
   height: 23px;
   margin: 10px 0;
   cursor: pointer;
   transform: rotate(0deg);
+  top: 24px;
+  right: 18px;
+  display: block;
+
+
+  @include md-min {
+    display: none;
+  }
 }
 
 .header-navbar__btn-row {
-
   position: absolute;
   left: 0;
   display: block;
@@ -60,7 +74,6 @@
   border-radius: 3px;
   background-color: $color-white;
   z-index: 2;
-
 
   &:nth-of-type(1) {
     top: 0;

@@ -221,6 +221,20 @@ a {
   border: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+}
+
 .btn-form {
   letter-spacing: 2px;
 
@@ -451,8 +465,8 @@ a {
   right: 0;
   left: 0;
 
-  margin-top: 30px;
   margin-left: 5px;
+  padding: 31px 0;
 }
 .header-menu__container {
   display: grid;
@@ -521,7 +535,11 @@ a {
 }
 
 .header-navbar__hamburger {
-  position: relative;
+  position: absolute;
+  top: 24px;
+  right: 18px;
+
+  display: block;
 
   width: 30px;
   height: 23px;
@@ -688,7 +706,9 @@ a {
 }
 
 .html:hover .html__image {
-  scale: 1.2;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .html:hover .html__link {
@@ -771,7 +791,9 @@ a {
 }
 
 .css:hover .css__image {
-  scale: 1.2;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .css:hover .css__link {
@@ -855,7 +877,9 @@ a {
 }
 
 .markup:hover .markup__image {
-  scale: 1.2;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .markup:hover .markup__link {
@@ -940,7 +964,9 @@ a {
 }
 
 .web-design:hover .web-design__image {
-  scale: 1.2;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .web-design:hover .web-design__link {
@@ -1025,7 +1051,9 @@ a {
 }
 
 .quality-assurance:hover .quality-assurance__image {
-  scale: 1.2;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .quality-assurance:hover .quality-assurance__link {
@@ -1109,7 +1137,9 @@ a {
 }
 
 .codding:hover .codding__image {
-  scale: 1.2;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .codding:hover .codding__link {
@@ -1169,7 +1199,7 @@ a {
   -ms-flex-pack: center;
   justify-content: center;
 
-  margin-top: 2px;
+  margin-top: 0;
   margin-left: 5px;
   padding: 20px;
 
@@ -1194,7 +1224,9 @@ a {
 }
 
 .adaptability:hover .adaptability__image {
-  scale: 1.2;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .adaptability:hover .adaptability__link {
@@ -1281,7 +1313,9 @@ a {
 }
 
 .php:hover .php__image {
-  scale: 1.2;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .php:hover .php__link {
@@ -1365,7 +1399,9 @@ a {
 }
 
 .seo:hover .seo__image {
-  scale: 1.2;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .seo:hover .seo__link {
@@ -1381,10 +1417,12 @@ a {
   justify-content: center;
 
   margin-top: 20px;
-  margin-left: 2px;
+  margin-left: 0;
 }
 
 .skills__btn--item {
+  min-height: 64px;
+  padding-top: 7px;
   padding-left: 0;
 
   letter-spacing: 1.8px;
@@ -2169,9 +2207,15 @@ a {
 }
 
 .posts__btn--item {
-  padding-left: 4px;
+  padding-left: 2px;
 
   letter-spacing: 1.8px;
+}
+
+@media (min-width: 768px) {
+  .header-navbar__hamburger {
+    display: none;
+  }
 }
 
 @media (max-width: 991.8px) {
@@ -2212,8 +2256,8 @@ a {
     margin-top: 43px;
   }
   .header-menu {
-    margin-top: 29px;
     margin-left: 0;
+    padding-top: 29px;
   }
   .header-menu__logo--link {
     margin-left: 2px;
@@ -2228,7 +2272,7 @@ a {
   }
   .grid-container {
     margin-top: 9px;
-    padding-right: 10px;
+    padding-right: 9px;
     padding-left: 10px;
 
     gap: 10px 10px;
@@ -2241,37 +2285,37 @@ a {
   }
   .css__link {
     margin-top: 1px;
-    margin-left: 4px;
+    margin-left: 1px;
   }
   .markup__link {
-    margin-top: 0;
+    margin-top: 2px;
     margin-left: 4px;
 
     letter-spacing: 2.5px;
   }
   .web-design__link {
-    margin-top: -1px;
-    margin-left: 6px;
+    margin-top: 0;
+    margin-left: 3px;
 
-    letter-spacing: 2.5px;
+    letter-spacing: 2.65px;
   }
   .quality-assurance__link {
-    margin-top: -1px;
+    margin-top: 2px;
     margin-left: 3px;
 
-    letter-spacing: 2.4px;
+    letter-spacing: 2.65px;
   }
   .codding__link {
-    margin-top: 0;
+    margin-top: 2px;
     margin-left: 3px;
 
-    letter-spacing: 2.4px;
+    letter-spacing: 2.6px;
   }
   .adaptability__link {
-    margin-top: 0;
+    margin-top: 1px;
     margin-left: 3px;
 
-    letter-spacing: 2.4px;
+    letter-spacing: 2.6px;
   }
   .php__link {
     margin-top: 1px;
@@ -2281,9 +2325,9 @@ a {
   }
   .seo__link {
     margin-top: 1px;
-    margin-left: 5px;
+    margin-left: 3px;
 
-    letter-spacing: 2.2px;
+    letter-spacing: 2.9px;
   }
   .skills__btn--item {
     min-height: 64px;
@@ -2293,6 +2337,7 @@ a {
     letter-spacing: 2px;
   }
   .section-about {
+    margin-top: 42px;
     padding-top: 0;
     padding-bottom: 74px;
   }
@@ -2302,22 +2347,23 @@ a {
     gap: 10px 40px;
   }
   .about__title {
-    margin-top: 80px;
+    margin-top: 79px;
+    margin-left: 0;
 
-    letter-spacing: 2.67px;
+    letter-spacing: 2.88px;
 
     font-size: 32px;
     line-height: 40px;
   }
   .about__title--span {
-    letter-spacing: 3.43px;
+    letter-spacing: 3.36px;
   }
   .about__description--box {
     max-width: 630px;
-    margin-top: 33px;
+    margin-top: 34px;
   }
   .about__description--item {
-    letter-spacing: 1px;
+    letter-spacing: 1.8px;
   }
   .about__description--item {
     letter-spacing: 0.8px;
@@ -2339,6 +2385,10 @@ a {
   .form__container {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+  .form__subscribe {
+    margin-top: -2px;
+    padding-top: 3px;
   }
   .form__input--name {
     padding-bottom: 4px;
@@ -2367,7 +2417,7 @@ a {
     line-height: 40px;
   }
   .posts__box {
-    margin-top: 44px;
+    margin-top: 43px;
 
     grid-template-areas: "gr1 gr1 gr2" "gr3 gr4 gr4" "gr5 gr5 gr6";
     grid-template-columns: 1fr 1fr 1fr;
@@ -2439,6 +2489,9 @@ a {
   .footer__svg--list {
     margin-top: 56px;
   }
+  .footer__copy {
+    margin-top: 60px;
+  }
   .header {
     min-height: 560px;
   }
@@ -2455,12 +2508,30 @@ a {
     margin-top: 30px;
     margin-left: 1px;
   }
+  .header-menu {
+    margin-top: 0;
+    padding-top: 34px;
+    padding-bottom: 28px;
+
+    background-color: rgba(68, 89, 110, 0.25);
+    -webkit-box-shadow: -3px 3px 20px -10px black;
+            box-shadow: -3px 3px 20px -10px black;
+  }
   .header-menu__logo--link {
     margin-top: 2px;
     margin-left: 1px;
   }
-  .header__navbar {
+  .header__navbar--list {
+    position: absolute;
+    top: 93px;
+    right: 30px;
+
     display: none;
+
+    background-color: #44596e;
+  }
+  .header__navbar--link {
+    padding: 20px;
   }
   .grid-container {
     grid-template-areas: "html  css" "markup css" "web-design web-design" "quality-assurance codding" "quality-assurance adaptability" "php seo";
@@ -2525,6 +2596,9 @@ a {
 
     letter-spacing: 1.3px;
   }
+  .skills-btn__box {
+    padding-left: 2px;
+  }
   .skills__btn--item {
     min-height: 60px;
     margin-top: 1px;
@@ -2533,10 +2607,11 @@ a {
     padding-left: 2px;
   }
   .section-about {
+    margin-top: 41px;
     padding-bottom: 53px;
   }
   .about__title {
-    margin-top: 59px;
+    margin-top: 58px;
     margin-left: 2px;
 
     letter-spacing: 2.2px;
@@ -2549,7 +2624,7 @@ a {
   }
   .about__description--box {
     max-width: 414px;
-    margin-top: 24px;
+    margin-top: 23px;
     margin-left: 2px;
   }
   .about__description--item {
@@ -2560,7 +2635,7 @@ a {
     right: -20px;
   }
   .about__picture {
-    margin-top: -246px;
+    margin-top: -252px;
     margin-left: 33px;
   }
   .about__image {
@@ -2582,7 +2657,9 @@ a {
   }
   .form__subscribe {
     max-width: 352px;
-    padding-left: 2px;
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 1px;
   }
   .form__input--name {
     padding-top: 4px;
@@ -2614,7 +2691,7 @@ a {
     line-height: 32px;
   }
   .posts__box {
-    margin-top: 29px;
+    margin-top: 28px;
     padding-right: 1px;
     padding-left: 2px;
 
@@ -2636,12 +2713,16 @@ a {
   }
   .group-2__description {
     max-width: 271px;
+    margin-top: 17px;
     padding-right: 5px;
   }
   .group-3__title--item {
     margin-left: 3px;
 
     letter-spacing: 1.5px;
+  }
+  .group-3__description {
+    padding-right: 3px;
   }
   .group-4__title--item {
     margin-left: 2px;
@@ -2665,7 +2746,7 @@ a {
   }
   .group-6__description {
     max-width: 250px;
-    margin-top: 23px;
+    margin-top: 22px;
     padding-right: 2px;
   }
   .posts-btn__box {
@@ -2698,8 +2779,8 @@ a {
     margin-left: 2px;
   }
   .grid-container {
-    margin-top: 19px;
-    padding-right: 22px;
+    margin-top: 20px;
+    padding-right: 21px;
     padding-left: 22px;
 
     gap: 20px 10px;
@@ -2836,7 +2917,7 @@ a {
   }
   .group-1__description {
     max-width: 459px;
-    margin-top: 23px;
+    margin-top: 22px;
   }
   .group-2__description {
     padding-right: 0;
@@ -2861,6 +2942,7 @@ a {
   .group-5__description {
     max-width: 483px;
     margin-top: 25px;
+    padding-right: 1px;
   }
   .group-6__title--item {
     margin-top: 56px;

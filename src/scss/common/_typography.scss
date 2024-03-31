@@ -28,3 +28,7 @@ a {
   color: $color-white;
   text-decoration: none;
 }
+
+.visually-hidden {
+  @include visually-hidden;
+}

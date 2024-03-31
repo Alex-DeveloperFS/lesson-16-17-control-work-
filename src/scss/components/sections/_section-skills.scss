@@ -18,7 +18,7 @@
 
   @include lg {
     margin-top: 9px;
-    padding-right: 10px;
+    padding-right: 9px;
     padding-left: 10px;
     gap: 10px 10px;
     grid-template-areas:
@@ -56,8 +56,8 @@
       "adaptability"
       "php"
       "seo";
-    margin-top: 19px;
-    padding-right: 22px;
+    margin-top: 20px;
+    padding-right: 21px;
     padding-left: 22px;
     gap: 20px 10px;
   }
@@ -67,7 +67,6 @@
   grid-area: html;
   @include skills;
 
-
   &__image {
     @include skills__image;
   }
@@ -76,8 +75,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-
   }
 
   &__link {
@@ -113,7 +110,7 @@
 }
 
 .html:hover .html__image {
-  scale: 1.2;
+  transform: scale(1.2);
 }
 
 .html:hover .html__link {
@@ -137,10 +134,9 @@
     @include skills__link;
     margin-top: 2px;
 
-
     @include lg {
       margin-top: 1px;
-      margin-left: 4px;
+      margin-left: 1px;
     }
 
     @include md {
@@ -152,7 +148,6 @@
       letter-spacing: 1px;
       margin-left: 2px;
     }
-
   }
 
   &__overlay {
@@ -165,7 +160,7 @@
 }
 
 .css:hover .css__image {
-  scale: 1.2;
+  transform: scale(1.2);
 }
 
 .css:hover .css__link {
@@ -192,7 +187,7 @@
 
 
     @include lg {
-      margin-top: 0px;
+      margin-top: 2px;
       margin-left: 4px;
       letter-spacing: 2.5px;
     }
@@ -219,7 +214,7 @@
 }
 
 .markup:hover .markup__image {
-  scale: 1.2;
+  transform: scale(1.2);
 }
 
 .markup:hover .markup__link {
@@ -245,11 +240,10 @@
     margin-top: 2px;
     margin-left: 5px;
 
-
     @include lg {
-      margin-top: -1px;
-      margin-left: 6px;
-      letter-spacing: 2.5px;
+      margin-top: 0px;
+      margin-left: 3px;
+      letter-spacing: 2.65px;
     }
     @include md {
 
@@ -276,7 +270,7 @@
 }
 
 .web-design:hover .web-design__image {
-  scale: 1.2;
+  transform: scale(1.2);
 }
 
 .web-design:hover .web-design__link {
@@ -303,16 +297,18 @@
     margin-left: 1px;
 
     @include lg {
-      margin-top: -1px;
+      margin-top: 2px;
       margin-left: 3px;
-      letter-spacing: 2.4px;
+      letter-spacing: 2.65px;
     }
+
     @include md {
       letter-spacing: 1.9px;
       font-size: 18px;
       margin-top: 3px;
       margin-left: 0px;
     }
+
     @include sm {
       margin-top: 0;
       letter-spacing: 1.75px;
@@ -330,7 +326,7 @@
 }
 
 .quality-assurance:hover .quality-assurance__image {
-  scale: 1.2;
+  transform: scale(1.2);
 }
 
 .quality-assurance:hover .quality-assurance__link {
@@ -356,9 +352,9 @@
     margin-top: 2px;
 
     @include lg {
-      margin-top: 0px;
+      margin-top: 2px;
       margin-left: 3px;
-      letter-spacing: 2.4px;
+      letter-spacing: 2.6px;
     }
 
     @include md {
@@ -383,7 +379,7 @@
 }
 
 .codding:hover .codding__image {
-  scale: 1.2;
+  transform: scale(1.2);
 }
 
 .codding:hover .codding__link {
@@ -407,12 +403,12 @@
     @include skills__link;
     letter-spacing: 2.6px;
     margin-left: 5px;
-    margin-top: 2px;
+    margin-top: 0;
 
     @include lg {
-      margin-top: 0px;
+      margin-top: 1px;
       margin-left: 3px;
-      letter-spacing: 2.4px;
+      letter-spacing: 2.6px;
     }
 
     @include md {
@@ -420,6 +416,7 @@
       margin-left: 0px;
       letter-spacing: 1.4px;
     }
+
     @include sm {
       margin-top: 0;
       letter-spacing: 1.5px;
@@ -437,7 +434,7 @@
 }
 
 .adaptability:hover .adaptability__image {
-  scale: 1.2;
+  transform: scale(1.2);
 }
 
 .adaptability:hover .adaptability__link {
@@ -467,10 +464,12 @@
       margin-left: 4px;
       letter-spacing: 3.3px;
     }
+
     @include md {
       margin-left: -1px;
       letter-spacing: 1.3px;
     }
+
     @include sm {
       margin-top: 2px;
       letter-spacing: 1.3px;
@@ -495,7 +494,7 @@
 }
 
 .php:hover .php__image {
-  scale: 1.2;
+  transform: scale(1.2);
 }
 
 .php:hover .php__link {
@@ -522,8 +521,8 @@
 
     @include lg {
       margin-top: 1px;
-      margin-left: 5px;
-      letter-spacing: 2.2px;
+      margin-left: 3px;
+      letter-spacing: 2.9px;
     }
 
     @include md {
@@ -547,7 +546,7 @@
 }
 
 .seo:hover .seo__image {
-  scale: 1.2;
+  transform: scale(1.2);
 }
 
 .seo:hover .seo__link {
@@ -558,7 +557,11 @@
   display: flex;
   justify-content: center;
   margin-top: 20px;
-  margin-left: 2px;
+  margin-left: 0;
+
+  @include md {
+   padding-left: 2px;
+  }
 
   @include sm {
     max-width: 542px;
@@ -567,12 +570,12 @@
     margin-left: 11px;
     padding-left: 2px;
   }
-
-
 }
 
 .skills__btn--item {
-  padding-left: 0;
+  min-height: 64px;
+  padding-top: 7px;
+  padding-left: 0px;
   letter-spacing: 1.8px;
 
   @include lg {
@@ -588,11 +591,11 @@
     padding-top: 0;
     padding-left: 2px;
     margin-left: 9px;
-
   }
+
   @include sm {
     min-height: 60px;
- width: 100%;
+    width: 100%;
     letter-spacing: 1.8px;
     padding-bottom: 2px;
   }

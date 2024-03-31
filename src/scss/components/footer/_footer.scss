@@ -54,6 +54,10 @@
   &__copy {
     margin-top: 59px;
 
+    @include md {
+      margin-top: 60px;
+    }
+
     &--text-1 {
       font-size: 16px;
       letter-spacing: 4.8px;

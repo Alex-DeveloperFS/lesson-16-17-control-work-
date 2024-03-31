@@ -33,7 +33,6 @@
 }
 
 %grid-link {
-  transition: 0.5s;
   z-index: 2;
   padding: 20px;
   transition: color 0.5s;
@@ -49,7 +48,6 @@
   opacity: 80%;
   transition: 0.5s;
 }
-
 
 %posts__title--item {
   font-size: 18px;
@@ -69,7 +67,6 @@
   font-family: $font-main;
   text-align: center;
 }
-
 
 %posts__image-block {
   transition: 0.5s;
