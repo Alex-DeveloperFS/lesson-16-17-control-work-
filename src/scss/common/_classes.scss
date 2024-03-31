@@ -1,10 +1,6 @@
 @use "../presets" as *;
 @use "../mixins" as *;
 
-.visually-hidden {
-  @include visually-hidden;
-}
-
 .btn-form {
   font-size: 18px;
   letter-spacing: 2px;
@@ -69,11 +65,6 @@
     min-height: 40px;
   }
 
-
-    &:hover {
-      background-color: $color-primary;
-
-  }
 }
 
 .btn--dark {
