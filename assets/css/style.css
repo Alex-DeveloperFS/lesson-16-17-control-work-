@@ -1428,9 +1428,7 @@ a {
 }
 
 .skills__btn--item {
-  min-height: 64px;
-  padding-top: 7px;
-  padding-left: 0;
+  min-height: 60px;
 
   letter-spacing: 1.8px;
 }
@@ -3020,7 +3018,7 @@ a {
   }
 }
 
-@media (max-width: 389.8px) {
+@media (max-width: 390.8px) {
   .about__picture {
     margin-left: 0;
   }

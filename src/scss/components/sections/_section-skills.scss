@@ -377,8 +377,7 @@
 .codding:hover .codding__overlay {
   opacity: 95%;
 }
-
-.codding:hover .codding__image {
+qdding:hover .codding__image {
   transform: scale(1.2);
 }
 
@@ -573,9 +572,7 @@
 }
 
 .skills__btn--item {
-  min-height: 64px;
-  padding-top: 7px;
-  padding-left: 0px;
+  min-height: 60px;
   letter-spacing: 1.8px;
 
   @include lg {
