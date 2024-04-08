@@ -185,6 +185,10 @@
         margin-top: 27px;
         margin-left: 25px;
       }
+
+      @include xs {
+        margin-left: 0;
+      }
     }
 
     &__image {

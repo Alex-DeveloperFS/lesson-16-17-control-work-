@@ -2808,9 +2808,21 @@ a {
     min-height: 992px;
   }
   .header-content__title {
-    max-width: 326px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -ms-flex-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+
     margin-top: 270px;
-    margin-left: 101px;
+    margin-left: -4px;
 
     letter-spacing: 2.32px;
 
@@ -3005,5 +3017,11 @@ a {
     padding-left: 6px;
 
     letter-spacing: 1.8px;
+  }
+}
+
+@media (max-width: 389.8px) {
+  .about__picture {
+    margin-left: 0;
   }
 }
