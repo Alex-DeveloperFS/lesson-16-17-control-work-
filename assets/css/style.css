@@ -1137,7 +1137,7 @@ a {
   opacity: 95%;
 }
 
-.codding:hover .codding__image {
+qdding:hover .codding__image {
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
           transform: scale(1.2);
@@ -2422,7 +2422,7 @@ a {
     right: -25px;
   }
   .about__picture {
-    margin-top: -26px;
+    margin-top: 20px;
     margin-left: 15px;
   }
   .about__image {
@@ -2936,7 +2936,7 @@ a {
     display: none;
   }
   .about__picture {
-    margin-top: 27px;
+    margin-top: 26px;
     margin-left: 25px;
   }
   .about__image {
@@ -3019,6 +3019,9 @@ a {
 }
 
 @media (max-width: 390.8px) {
+  .php__link {
+    margin-left: 2px;
+  }
   .about__picture {
     margin-left: 0;
   }
