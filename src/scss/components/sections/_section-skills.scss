@@ -474,6 +474,10 @@ qdding:hover .codding__image {
       letter-spacing: 1.3px;
       margin-left: -21px;
     }
+
+    @include xs {
+      margin-left: 0;
+    }
   }
 
   &__overlay {
