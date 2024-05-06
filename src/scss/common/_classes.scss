@@ -68,6 +68,7 @@
 }
 
 .btn--dark {
+
   min-width: 350px;
   min-height: 60px;
   background-color: $color-primary;
@@ -82,6 +83,11 @@
     background-color: $color-accent;
     border: 2px solid $color-primary;
   }
+
+  @include xs {
+   min-width: 100%;
+  }
+
 }
 
 .btn--light {

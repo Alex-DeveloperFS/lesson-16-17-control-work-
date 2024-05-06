@@ -124,7 +124,6 @@
     }
 
     @include sm {
-      margin-top: 72px;
     }
   }
 
@@ -145,6 +144,10 @@
       max-width: 459px;
       margin-top: 22px;
 
+      @include sm {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
     }
   }
 
@@ -158,6 +161,11 @@
 
   &:hover &__description {
     color: $color-primary;
+
+    @include sm {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
 
   &:hover &__link {
@@ -383,6 +391,13 @@
     @include md {
       margin-left: 2px;
     }
+
+    @include sm {
+
+      margin-top: 50px;
+
+    }
+
   }
 
   &__description {
@@ -405,10 +420,11 @@
 
     @include sm {
       max-width: 468px;
-      margin-top: 26px;
+      padding-left: 20px;
+      padding-right: 20px;
+
     }
   }
-
 
   &:hover &__image {
     transform: scale(1.1);
@@ -499,7 +515,8 @@
     @include sm {
       max-width: 483px;
       margin-top: 25px;
-      padding-right: 1px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
   }
 

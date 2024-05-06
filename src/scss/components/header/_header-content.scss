@@ -18,26 +18,25 @@
     letter-spacing: 4.7px;
     color: $color-white;
     line-height: 1.2em;
-    margin: 0 auto;
-    margin-top: 299px;
+    margin: 0 0 53px;
+
 
     @include lg {
       letter-spacing: 3.1px;
       font-size: 40px;
-      margin-left: 4px;
-      margin-top: 163px;
     }
 
     @include md {
-      margin-top: 78px;
+
       letter-spacing: 2.32px;
       font-size: 30px;
       font-weight: 300;
-      margin-left: 2px;
+      margin-bottom: 33px;
+
     }
 
     @include sm {
-      margin-top: 270px;
+
       letter-spacing: 2.32px;
       font-size: 30px;
       font-weight: 300;
@@ -46,7 +45,7 @@
       flex-direction: column;
       align-content: center;
       align-items: center;
-      margin-left: -4px;
+
     }
 
     &--span {
@@ -61,22 +60,21 @@
     display: flex;
     justify-content: center;
     gap: $gap;
-    margin-top: 53px;
-    margin-left: 4px;
-    margin: 0 auto;
+
 
     @include lg {
-      margin-top: 43px;
+
     }
 
     @include md {
-      margin-top: 30px;
-      margin-left: 1px;
+
     }
 
     @include sm {
-      margin-top: 38px;
-      margin-left: 2px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 }

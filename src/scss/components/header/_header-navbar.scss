@@ -4,13 +4,17 @@
 .header__navbar {
 
   &--list {
-    list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40px, max-content));
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: end;
-    gap: 21px;
+    margin-right: -7px;
+    margin-top: -1px;
+    list-style: none;
     font-weight: 400;
-    margin-right: -9px;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(40px, max-content));
+
 
     @include lg {
       margin-right: -14px;

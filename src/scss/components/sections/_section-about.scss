@@ -177,13 +177,13 @@
       }
 
       @include md {
-        margin-top: -252px;
-        margin-left: 33px;
+        margin-top: 20px;
+        margin-left: 0;
       }
 
       @include sm {
         margin-top: 26px;
-        margin-left: 25px;
+        margin-left: 0;
       }
 
       @include xs {

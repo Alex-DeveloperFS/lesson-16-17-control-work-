@@ -3,24 +3,28 @@
 
 .header {
   position: relative;
-  min-height: 1080px;
+  min-height: 100vh;
   background-color: $color-primary;
   background-image: url("../../../../assets/images/img-header.png");
   padding: 150px 0;
   background-size: cover;
   background-position: 50% 50%;
   color: $color-white;
+  display: grid;
+  align-content: center;
 
   @include lg {
-    min-height: 766px;
+
   }
 
+
+
   @include md {
-    min-height: 560px;
+
   }
 
   @include sm {
-    min-height: 992px;
+
   }
 }
 

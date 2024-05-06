@@ -398,7 +398,11 @@ a {
 .header {
   position: relative;
 
-  min-height: 1080px;
+  display: grid;
+  -ms-flex-line-pack: center;
+  align-content: center;
+
+  min-height: 100vh;
   padding: 150px 0;
 
   color: #ffffff;
@@ -407,14 +411,12 @@ a {
   background-position: 50% 50%;
   background-size: cover;
 }
-
 .header-content {
   position: relative;
   z-index: 1;
 }
 .header-content__title {
-  margin: 0 auto;
-  margin-top: 299px;
+  margin: 0 0 53px;
 
   text-align: center;
   letter-spacing: 4.7px;
@@ -433,10 +435,6 @@ a {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-
-  margin: 0 auto;
-  margin-top: 53px;
-  margin-left: 4px;
 
   gap: 20px;
 }
@@ -463,6 +461,8 @@ a {
 .header-menu__logo--link {
   display: block;
 
+  margin-top: 2px;
+
   text-decoration: none;
   letter-spacing: 0.22em;
 
@@ -472,14 +472,15 @@ a {
   font-weight: 400;
 }
 .header-menu__logo--span {
-  padding: 12px 0 13px 3px;
+  margin-left: -2px;
+  padding: 13px 1px 13px 4px;
 
   border: solid #d53d27 3px;
 
   line-height: 1.758rem;
 }
 .header-menu__logo--span-logo {
-  margin-left: 7px;
+  margin-left: 5px;
 }
 
 .header__navbar--list {
@@ -488,13 +489,14 @@ a {
   -ms-flex-pack: end;
   justify-content: end;
 
-  margin-right: -9px;
+  margin-top: -1px;
+  margin-right: -7px;
 
   list-style: none;
 
   font-weight: 400;
 
-  gap: 21px;
+  gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(40px, -webkit-max-content));
   grid-template-columns: repeat(auto-fit, minmax(40px, max-content));
 }
@@ -598,15 +600,15 @@ a {
 .grid-container {
   display: grid;
 
-  margin-top: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
+  min-height: 100vh;
+  margin-bottom: 10px;
+  padding: 10px;
 
   gap: 10px 10px;
   grid-auto-flow: row;
+  grid-auto-rows: repeat(3, 33.3333333333vh);
   grid-template-areas: "html html css markup" "web-design quality-assurance quality-assurance codding" "adaptability php seo codding";
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .html {
@@ -1335,7 +1337,6 @@ qdding:hover .codding__image {
   align-items: center;
   -ms-flex-align: center;
 
-  min-height: 350px;
   padding: 20px;
 
   grid-area: seo;
@@ -1423,7 +1424,6 @@ qdding:hover .codding__image {
   -ms-flex-pack: center;
   justify-content: center;
 
-  margin-top: 20px;
   margin-left: 0;
 }
 
@@ -2259,6 +2259,12 @@ qdding:hover .codding__image {
   letter-spacing: 1.8px;
 }
 
+@media (min-height: 690px) {
+  .grid-container {
+    grid-auto-rows: calc(33.3333333vh - 13px);
+  }
+}
+
 @media (min-width: 768px) {
   .header-navbar__hamburger {
     display: none;
@@ -2288,19 +2294,10 @@ qdding:hover .codding__image {
   .footer {
     margin-top: 80px;
   }
-  .header {
-    min-height: 766px;
-  }
   .header-content__title {
-    margin-top: 163px;
-    margin-left: 4px;
-
     letter-spacing: 3.1px;
 
     font-size: 40px;
-  }
-  .header-content__actions {
-    margin-top: 43px;
   }
   .header-menu {
     margin-left: 0;
@@ -2318,14 +2315,12 @@ qdding:hover .codding__image {
     gap: 20px;
   }
   .grid-container {
-    margin-top: 9px;
-    padding-right: 9px;
+    padding-right: 10px;
     padding-left: 10px;
 
     gap: 10px 10px;
     grid-template-areas: "html html css" "markup web-design web-design" "quality-assurance quality-assurance codding" "adaptability php codding" "adaptability seo seo";
     grid-template-columns: 1fr minmax(auto, 310px) 1fr;
-    grid-template-rows: minmax(auto, 350px) 1fr 1fr 1fr 1fr;
   }
   .html__link {
     margin-top: 1px;
@@ -2539,21 +2534,13 @@ qdding:hover .codding__image {
   .footer__copy {
     margin-top: 60px;
   }
-  .header {
-    min-height: 560px;
-  }
   .header-content__title {
-    margin-top: 78px;
-    margin-left: 2px;
+    margin-bottom: 33px;
 
     letter-spacing: 2.32px;
 
     font-size: 30px;
     font-weight: 300;
-  }
-  .header-content__actions {
-    margin-top: 30px;
-    margin-left: 1px;
   }
   .header-menu {
     margin-top: 0;
@@ -2583,7 +2570,6 @@ qdding:hover .codding__image {
   .grid-container {
     grid-template-areas: "html  css" "markup css" "web-design web-design" "quality-assurance codding" "quality-assurance adaptability" "php seo";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: minmax(auto, 350px) minmax(auto, 350px) minmax(auto, 350px) minmax(auto, 350px) minmax(auto, 360px) minmax(auto, 350px);
   }
   .html__link {
     margin-top: 2px;
@@ -2648,8 +2634,6 @@ qdding:hover .codding__image {
   }
   .skills__btn--item {
     min-height: 60px;
-    margin-top: 1px;
-    margin-left: 9px;
     padding-top: 0;
     padding-left: 2px;
   }
@@ -2682,8 +2666,8 @@ qdding:hover .codding__image {
     right: -20px;
   }
   .about__picture {
-    margin-top: -252px;
-    margin-left: 33px;
+    margin-top: 20px;
+    margin-left: 0;
   }
   .about__image {
     max-width: 236px;
@@ -2801,10 +2785,13 @@ qdding:hover .codding__image {
   }
 }
 
-@media (max-width: 575.8px) {
-  .header {
-    min-height: 992px;
+@media (max-height: 690px) {
+  .grid-container {
+    grid-auto-rows: 217px;
   }
+}
+
+@media (max-width: 575.8px) {
   .header-content__title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2819,9 +2806,6 @@ qdding:hover .codding__image {
     -ms-flex-direction: column;
         flex-direction: column;
 
-    margin-top: 270px;
-    margin-left: -4px;
-
     letter-spacing: 2.32px;
 
     font-size: 30px;
@@ -2834,18 +2818,24 @@ qdding:hover .codding__image {
     letter-spacing: 2.5px;
   }
   .header-content__actions {
-    margin-top: 38px;
-    margin-left: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -ms-flex-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
   .grid-container {
-    margin-top: 20px;
-    padding-right: 21px;
-    padding-left: 22px;
+    margin-bottom: 0;
+    padding: 20px;
 
     gap: 20px 10px;
     grid-template-areas: "html" "css" "markup" "web-design" "quality-assurance" "codding" "adaptability" "php" "seo";
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(9, minmax(auto, 350px));
   }
   .html__link {
     margin-top: 0;
@@ -2901,11 +2891,9 @@ qdding:hover .codding__image {
     letter-spacing: 1.75px;
   }
   .skills-btn__box {
-    max-width: 542px;
-    margin-top: 20px;
-    margin-right: 21px;
-    margin-left: 11px;
-    padding-left: 2px;
+    max-width: 100%;
+    margin-right: 20px;
+    padding-left: 20px;
   }
   .skills__btn--item {
     width: 100%;
@@ -2937,7 +2925,7 @@ qdding:hover .codding__image {
   }
   .about__picture {
     margin-top: 26px;
-    margin-left: 25px;
+    margin-left: 0;
   }
   .about__image {
     max-width: 271px;
@@ -2971,12 +2959,13 @@ qdding:hover .codding__image {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
   }
-  .group-1__title--item {
-    margin-top: 72px;
-  }
   .group-1__description {
     max-width: 459px;
     margin-top: 22px;
+  }
+  .group-1:hover .group-1__description {
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .group-2__description {
     padding-right: 0;
@@ -2990,9 +2979,13 @@ qdding:hover .codding__image {
     margin-top: 40px;
     padding-right: 0;
   }
+  .group-4__title--item {
+    margin-top: 50px;
+  }
   .group-4__description {
     max-width: 468px;
-    margin-top: 26px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .group-5__title--item {
     margin-top: 79px;
@@ -3001,7 +2994,8 @@ qdding:hover .codding__image {
   .group-5__description {
     max-width: 483px;
     margin-top: 25px;
-    padding-right: 1px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .group-6__title--item {
     margin-top: 56px;
@@ -3018,11 +3012,32 @@ qdding:hover .codding__image {
   }
 }
 
+@media (max-width: 575.8px) and (max-width: 575.8px) {
+  .group-1__description {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
 @media (max-width: 390.8px) {
+  .btn--dark {
+    min-width: 100%;
+  }
+  .grid-container {
+    padding: 20px;
+  }
   .php__link {
     margin-left: 2px;
   }
   .about__picture {
     margin-left: 0;
+  }
+}
+
+@media (max-width: 240px) {
+  .skills-btn__box {
+    max-width: 100%;
+    margin-right: 20px;
+    padding-left: 20px;
   }
 }

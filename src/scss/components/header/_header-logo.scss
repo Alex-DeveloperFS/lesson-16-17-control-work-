@@ -12,6 +12,7 @@
       text-decoration: none;
       letter-spacing: 0.22em;
       display: block;
+      margin-top: 2px;
 
       @include lg {
         margin-left: 2px;
@@ -24,16 +25,17 @@
     }
 
     &--span {
-      border: solid $color-highlight 3px;
-      padding: 12px 0px 13px 3px;
+      padding: 13px 1px 13px 4px;
+      border: solid #d53d27 3px;
       line-height: 1.758rem;
+      margin-left: -2px;
 
       @include lg {
         margin-left: 0
       }
 
       &-logo {
-        margin-left: 7px;
+        margin-left: 5px;
       }
     }
   }

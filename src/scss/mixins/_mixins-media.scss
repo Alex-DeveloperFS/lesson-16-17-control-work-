@@ -254,3 +254,27 @@ $diff: 0.2px;
     @content;
   }
 }
+
+@mixin xxs {
+  @media (max-width: $xxs) {
+    @content;
+  }
+}
+
+@mixin xxs-min {
+  @media (min-width: $xxs) {
+    @content;
+  }
+}
+
+@mixin height-690px-min {
+  @media (min-height: $height-690px) {
+    @content;
+  }
+}
+
+@mixin height-690px {
+  @media (max-height: $height-690px) {
+    @content;
+  }
+}
