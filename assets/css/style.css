@@ -254,6 +254,7 @@ a {
 
   min-width: 250px;
   min-height: 60px;
+  padding-top: 2px;
 
   -webkit-transition: 0.5s;
           transition: 0.5s;
@@ -437,6 +438,8 @@ a {
   -ms-flex-pack: center;
   justify-content: center;
 
+  margin-left: 3px;
+
   gap: 20px;
 }
 
@@ -462,10 +465,11 @@ a {
 .header-menu__logo--link {
   display: block;
 
-  margin-top: 2px;
+  margin-top: 0;
+  margin-left: 1.1px;
 
   text-decoration: none;
-  letter-spacing: 0.22em;
+  letter-spacing: 5.7px;
 
   color: #ffffff;
 
@@ -474,7 +478,7 @@ a {
 }
 .header-menu__logo--span {
   margin-left: -2px;
-  padding: 13px 1px 13px 4px;
+  padding: 12px 0 13px 3px;
 
   border: solid #d53d27 3px;
 
@@ -668,7 +672,7 @@ a {
   -ms-flex-pack: center;
   justify-content: center;
 
-  margin-top: 3px;
+  margin-top: 1px;
   margin-left: 4px;
   padding: 20px;
 
@@ -934,8 +938,8 @@ a {
   -ms-flex-pack: center;
   justify-content: center;
 
-  margin-top: 2px;
-  margin-left: 5px;
+  margin-top: 1px;
+  margin-left: 4px;
   padding: 20px;
 
   -webkit-transition: 0.5s;
@@ -1203,7 +1207,7 @@ qdding:hover .codding__image {
   -ms-flex-pack: center;
   justify-content: center;
 
-  margin-top: 0;
+  margin-top: 1px;
   margin-left: 5px;
   padding: 20px;
 
@@ -1457,7 +1461,7 @@ qdding:hover .codding__image {
 .about__title {
   margin-top: 20px;
 
-  letter-spacing: 3.5px;
+  letter-spacing: 3.65px;
 
   color: #2d3651;
 
@@ -1467,7 +1471,7 @@ qdding:hover .codding__image {
   line-height: 48px;
 }
 .about__title--span {
-  letter-spacing: 4.3px;
+  letter-spacing: 4.22px;
 }
 .about__description--box {
   position: relative;
@@ -1485,7 +1489,7 @@ qdding:hover .codding__image {
   row-gap: 16px;
 }
 .about__description--item {
-  letter-spacing: 0.99px;
+  letter-spacing: 0.89px;
 
   color: #637588;
 
@@ -1525,8 +1529,9 @@ qdding:hover .codding__image {
 .form__container {
   display: grid;
 
+  margin-top: -1px;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
 
   gap: 0 20px;
   grid-auto-flow: row;
@@ -1544,13 +1549,13 @@ qdding:hover .codding__image {
   display: block;
 
   width: 100%;
-  height: 60px;
-  padding-right: 30px;
-  padding-left: 30px;
+  height: 62px;
+  padding-top: 1px;
+  padding-left: 29px;
 
   -webkit-transition: background-color 0.5s, border-color 0.5s, color 0.5s;
           transition: background-color 0.5s, border-color 0.5s, color 0.5s;
-  letter-spacing: 2px;
+  letter-spacing: 1.8px;
 
   color: #ffffff;
   border: 2px solid rgba(255, 255, 255, 0);
@@ -1573,13 +1578,13 @@ qdding:hover .codding__image {
   display: block;
 
   width: 100%;
-  height: 60px;
-  padding-right: 30px;
-  padding-left: 30px;
+  height: 62px;
+  padding-bottom: 3px;
+  padding-left: 33px;
 
   -webkit-transition: background-color 0.5s, border-color 0.5s, color 0.5s;
           transition: background-color 0.5s, border-color 0.5s, color 0.5s;
-  letter-spacing: 2px;
+  letter-spacing: 1.8px;
 
   color: #ffffff;
   border: 2px solid rgba(255, 255, 255, 0);
@@ -1654,7 +1659,7 @@ qdding:hover .codding__image {
   justify-content: center;
 
   max-width: 420px;
-  height: 60px;
+  height: 62px;
 
   grid-area: form__subscribe;
 }
@@ -2285,7 +2290,7 @@ qdding:hover .codding__image {
 
 @media (min-height: 690px) {
   .grid-container {
-    grid-auto-rows: calc(33.3333333vh - 13px);
+    grid-auto-rows: calc(33.3333333vh - 10px);
   }
 }
 

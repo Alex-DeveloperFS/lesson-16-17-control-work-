@@ -55,7 +55,7 @@
 
   &__title {
     font-size: 40px;
-    letter-spacing: 3.5px;
+    letter-spacing: 3.65px;
     line-height: 48px;
     color: $color-primary;
     font-weight: 700;
@@ -84,7 +84,7 @@
     }
 
     &--span {
-      letter-spacing: 4.3px;
+      letter-spacing: 4.22px;
 
       @include lg {
         letter-spacing: 3.36px;
@@ -122,7 +122,7 @@
 
   &__description--item {
     font-size: 18px;
-    letter-spacing: 0.99px;
+    letter-spacing: 0.89px;
     line-height: 24px;
     color: $color-gray;
     font-weight: 400;

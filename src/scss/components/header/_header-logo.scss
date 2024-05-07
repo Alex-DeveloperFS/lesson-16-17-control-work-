@@ -6,13 +6,14 @@
   &__logo {
 
     &--link {
-      font-weight: 400;
-      font-size: 1.5rem;
-      color: $color-white;
-      text-decoration: none;
-      letter-spacing: 0.22em;
       display: block;
-      margin-top: 2px;
+      margin-top: 0;
+      margin-left: 1.1px;
+      text-decoration: none;
+      letter-spacing: 5.7px;
+      color: #ffffff;
+      font-size: 1.5rem;
+      font-weight: 400;
 
       @include lg {
         margin-left: 2px;
@@ -25,10 +26,10 @@
     }
 
     &--span {
-      padding: 13px 1px 13px 4px;
+      margin-left: -2px;
+      padding: 12px 0 13px 3px;
       border: solid #d53d27 3px;
       line-height: 1.758rem;
-      margin-left: -2px;
 
       @include lg {
         margin-left: 0

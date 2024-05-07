@@ -55,6 +55,7 @@
     display: flex;
     justify-content: center;
     gap: $gap;
+    margin-left: 3px;
   }
   @include sm {
     display: flex;
