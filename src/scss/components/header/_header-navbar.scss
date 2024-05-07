@@ -15,11 +15,11 @@
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(40px, max-content));
 
-
     @include lg {
       margin-right: -14px;
       gap: 20px;
     }
+
     @include md {
       position: absolute;
       top: 93px;
@@ -28,7 +28,6 @@
       display: none;
     }
   }
-
 
   &--link {
     font-size: 1.125rem;
@@ -59,7 +58,6 @@
   top: 24px;
   right: 18px;
   display: block;
-
 
   @include md-min {
     display: none;

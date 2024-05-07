@@ -17,7 +17,6 @@
   margin-bottom: 10px;
 
   @include lg {
-
     padding-right: 10px;
     padding-left: 10px;
     gap: 10px 10px;
@@ -69,7 +68,6 @@
   @include height-690px {
     grid-auto-rows: calc(230px - 13px);
   }
-
 }
 
 .html {
@@ -194,7 +192,6 @@
     margin-top: 1px;
     margin-left: 2px;
 
-
     @include lg {
       margin-top: 2px;
       margin-left: 4px;
@@ -206,6 +203,7 @@
       margin-left: -1px;
       letter-spacing: 1.5px;
     }
+
     @include sm {
       margin-top: 0;
       letter-spacing: 1.4px;
@@ -254,6 +252,7 @@
       margin-left: 3px;
       letter-spacing: 2.65px;
     }
+
     @include md {
 
       letter-spacing: 1.9px;
@@ -516,7 +515,6 @@ qdding:hover .codding__image {
 .seo {
   grid-area: seo;
   @include skills;
-
 
   &__image {
     @include skills__image;

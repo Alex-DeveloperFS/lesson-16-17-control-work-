@@ -73,7 +73,6 @@
       margin-top: -2px;
     }
 
-
     @include md {
       max-width: 352px;
       padding-left: 1px;
@@ -160,7 +159,6 @@
         font-size: 18px;
         line-height: 22px;
       }
-
 
       &:focus, &:hover {
         border-color: rgba(255, 255, 255, 0.15);

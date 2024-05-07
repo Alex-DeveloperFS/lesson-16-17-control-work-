@@ -411,6 +411,7 @@ a {
   background-position: 50% 50%;
   background-size: cover;
 }
+
 .header-content {
   position: relative;
   z-index: 1;
@@ -2259,6 +2260,29 @@ qdding:hover .codding__image {
   letter-spacing: 1.8px;
 }
 
+@media (min-width: 240px) {
+  .group-1__description {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-3__description {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-4__description {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-5__description {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-6__description {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
 @media (min-height: 690px) {
   .grid-container {
     grid-auto-rows: calc(33.3333333vh - 13px);
@@ -2268,6 +2292,57 @@ qdding:hover .codding__image {
 @media (min-width: 768px) {
   .header-navbar__hamburger {
     display: none;
+  }
+}
+
+@media (max-width: 1199.8px) and (min-width: 992px) {
+  .group-1__title--item {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-1__description {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-2__title--item {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-2__description {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-3__title--item {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-3__description {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-4__title--item {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-4__description {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-5__title--item {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-5__description {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-6__title--item {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-6__description {
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 
@@ -2511,6 +2586,57 @@ qdding:hover .codding__image {
   }
 }
 
+@media (max-width: 991.8px) and (min-width: 768px) {
+  .group-1__title--item {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-1__description {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-2__title--item {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-2__description {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-3__title--item {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-3__description {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-4__title--item {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-4__description {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-5__title--item {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-5__description {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-6__title--item {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-6__description {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
 @media (max-width: 767.8px) {
   .btn-form {
     margin-top: 0;
@@ -2735,7 +2861,6 @@ qdding:hover .codding__image {
   }
   .group-1__description {
     max-width: 296px;
-    margin-top: 2px;
   }
   .group-2__title--item {
     margin-left: 2px;
@@ -2785,6 +2910,57 @@ qdding:hover .codding__image {
   }
 }
 
+@media (max-width: 767.8px) and (min-width: 576px) {
+  .group-1__title--item {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-1__description {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-2__title--item {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-2__description {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-3__title--item {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-3__description {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-4__title--item {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-4__description {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-5__title--item {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-5__description {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-6__title--item {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .group-6__description {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
 @media (max-height: 690px) {
   .grid-container {
     grid-auto-rows: 217px;
@@ -2817,7 +2993,7 @@ qdding:hover .codding__image {
 
     letter-spacing: 2.5px;
   }
-  .header-content__actions {
+  .header-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2959,19 +3135,31 @@ qdding:hover .codding__image {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
   }
+  .group-1__title--item {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
   .group-1__description {
     max-width: 459px;
     margin-top: 22px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .group-1:hover .group-1__description {
     padding-right: 20px;
     padding-left: 20px;
   }
+  .group-2__title--item {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
   .group-2__description {
-    padding-right: 0;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .group-3__title--item {
-    margin-left: 1px;
+    padding-right: 20px;
+    padding-left: 20px;
 
     letter-spacing: 1.4px;
   }
@@ -2980,7 +3168,9 @@ qdding:hover .codding__image {
     padding-right: 0;
   }
   .group-4__title--item {
-    margin-top: 50px;
+    margin-top: 79px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .group-4__description {
     max-width: 468px;
@@ -2989,7 +3179,8 @@ qdding:hover .codding__image {
   }
   .group-5__title--item {
     margin-top: 79px;
-    margin-left: 0;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .group-5__description {
     max-width: 483px;
@@ -2999,6 +3190,8 @@ qdding:hover .codding__image {
   }
   .group-6__title--item {
     margin-top: 56px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .posts-btn__box {
     max-width: 532px;
@@ -3009,13 +3202,6 @@ qdding:hover .codding__image {
     padding-left: 6px;
 
     letter-spacing: 1.8px;
-  }
-}
-
-@media (max-width: 575.8px) and (max-width: 575.8px) {
-  .group-1__description {
-    padding-right: 20px;
-    padding-left: 20px;
   }
 }
 

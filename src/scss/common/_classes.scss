@@ -15,6 +15,7 @@
     margin-left: 3px;
     padding-left: 4px;
   }
+
   @include md {
     font-size: 18px;
     letter-spacing: 2px;
@@ -22,7 +23,6 @@
     margin-left: -4px;
     padding-left: 4px;
   }
-
 }
 
 .btn-classic  {
@@ -64,11 +64,9 @@
     min-width: 170px;
     min-height: 40px;
   }
-
 }
 
 .btn--dark {
-
   min-width: 350px;
   min-height: 60px;
   background-color: $color-primary;
@@ -87,7 +85,6 @@
   @include xs {
    min-width: 100%;
   }
-
 }
 
 .btn--light {

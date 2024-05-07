@@ -20,23 +20,19 @@
     line-height: 1.2em;
     margin: 0 0 53px;
 
-
     @include lg {
       letter-spacing: 3.1px;
       font-size: 40px;
     }
 
     @include md {
-
       letter-spacing: 2.32px;
       font-size: 30px;
       font-weight: 300;
       margin-bottom: 33px;
-
     }
 
     @include sm {
-
       letter-spacing: 2.32px;
       font-size: 30px;
       font-weight: 300;
@@ -45,7 +41,6 @@
       flex-direction: column;
       align-content: center;
       align-items: center;
-
     }
 
     &--span {
@@ -60,21 +55,10 @@
     display: flex;
     justify-content: center;
     gap: $gap;
-
-
-    @include lg {
-
-    }
-
-    @include md {
-
-    }
-
-    @include sm {
-
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+  }
+  @include sm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
