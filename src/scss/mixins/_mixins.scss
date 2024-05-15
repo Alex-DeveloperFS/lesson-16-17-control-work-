@@ -72,11 +72,13 @@
   transition: 0.5s;
   z-index: 2;
   padding: 20px;
-  letter-spacing: 3px;
+  letter-spacing: 2.1px;
   @include abs-position;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.25rem;
+
 }
 
 @mixin skills__overlay {
@@ -111,6 +113,7 @@
   font-family: $font-main;
   text-align: center;
   transition: 0.5s;
+
 }
 
 @mixin posts__image-block {

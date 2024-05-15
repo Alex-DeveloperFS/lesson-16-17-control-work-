@@ -13,7 +13,7 @@
   color: $color-primary;
   font-weight: 700;
   font-family: $font-header;
-  margin-top: 102px;
+  margin-top: 103px;
 
   @include lg {
     font-size: 32px;
@@ -113,7 +113,7 @@
 
   &__title--item {
     @include posts__title--item;
-    margin-top: 71px;
+    margin-top: 72px;
     margin-left: 2px;
     padding-left: 5px;
     padding-right: 5px;
@@ -147,8 +147,10 @@
     @include posts__description;
     grid-area: t1;
     margin: 0 auto;
-    margin-top: 23px;
+    margin-top: 22px;
     max-width: 544px;
+    padding-left: 0;
+    padding-right: 0;
 
     @include xl-lg {
       padding-left: 20px;
@@ -176,7 +178,7 @@
       padding-right: 20px;
     }
 
-    @include xxs-min {
+    @include xxs {
       padding-left: 20px;
       padding-right: 20px;
     }

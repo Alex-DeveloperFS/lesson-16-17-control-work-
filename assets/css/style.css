@@ -254,11 +254,12 @@ a {
 
   min-width: 250px;
   min-height: 60px;
-  padding-top: 2px;
+  padding-top: 0;
+  padding-right: 1px;
 
   -webkit-transition: 0.5s;
           transition: 0.5s;
-  letter-spacing: 2px;
+  letter-spacing: 1.8px;
 
   opacity: 0.8;
   border: 2px solid #ffffff;
@@ -438,7 +439,7 @@ a {
   -ms-flex-pack: center;
   justify-content: center;
 
-  margin-left: 3px;
+  margin-left: 1.5px;
 
   gap: 20px;
 }
@@ -459,33 +460,32 @@ a {
   align-items: center;
   -ms-flex-align: center;
 
+  margin-top: -11px;
+
   grid-template-columns: auto 1fr;
 }
 
 .header-menu__logo--link {
   display: block;
 
-  margin-top: 0;
-  margin-left: 1.1px;
+  margin-left: -2px;
 
-  text-decoration: none;
-  letter-spacing: 5.7px;
-
-  color: #ffffff;
+  letter-spacing: 0.22em;
 
   font-size: 1.5rem;
-  font-weight: 400;
 }
 .header-menu__logo--span {
-  margin-left: -2px;
-  padding: 12px 0 13px 3px;
+  display: inline-block;
 
-  border: solid #d53d27 3px;
+  margin-right: 4px;
+  padding: 14px 1px 13px 4.5px;
 
-  line-height: 1.758rem;
+  border: 3px solid #d53d27;
 }
 .header-menu__logo--span-logo {
-  margin-left: 5px;
+  margin-left: -1px;
+
+  letter-spacing: 4.9px;
 }
 
 .header__navbar--list {
@@ -495,7 +495,7 @@ a {
   justify-content: end;
 
   margin-top: -1px;
-  margin-right: -7px;
+  margin-right: -7.3px;
 
   list-style: none;
 
@@ -512,7 +512,7 @@ a {
 
   -webkit-transition: 0.3s;
           transition: 0.3s;
-  letter-spacing: 1.55px;
+  letter-spacing: 1.6px;
 
   color: #ffffff;
 
@@ -602,16 +602,17 @@ a {
   background-color: #2d3651;
 }
 
+.section-skills {
+  padding: 10px;
+  padding-bottom: 0;
+}
+
 .grid-container {
   display: grid;
 
-  min-height: 100vh;
-  margin-bottom: 10px;
-  padding: 10px;
+  margin-bottom: 20px;
 
   gap: 10px 10px;
-  grid-auto-flow: row;
-  grid-auto-rows: repeat(3, 33.3333333333vh);
   grid-template-areas: "html html css markup" "web-design quality-assurance quality-assurance codding" "adaptability php seo codding";
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -673,12 +674,15 @@ a {
   justify-content: center;
 
   margin-top: 1px;
-  margin-left: 4px;
+  margin-left: 0;
   padding: 20px;
 
   -webkit-transition: 0.5s;
           transition: 0.5s;
-  letter-spacing: 3px;
+  letter-spacing: 2.1px;
+  letter-spacing: 2.1px;
+
+  font-size: 1.25rem;
 }
 .html__overlay {
   position: absolute;
@@ -761,12 +765,14 @@ a {
   -ms-flex-pack: center;
   justify-content: center;
 
-  margin-top: 2px;
   padding: 20px;
 
   -webkit-transition: 0.5s;
           transition: 0.5s;
-  letter-spacing: 3px;
+  letter-spacing: 2.1px;
+  letter-spacing: 2.1px;
+
+  font-size: 1.25rem;
 }
 .css__overlay {
   position: absolute;
@@ -849,13 +855,14 @@ a {
   -ms-flex-pack: center;
   justify-content: center;
 
-  margin-top: 1px;
-  margin-left: 2px;
   padding: 20px;
 
   -webkit-transition: 0.5s;
           transition: 0.5s;
-  letter-spacing: 3px;
+  letter-spacing: 2.1px;
+  letter-spacing: 2px;
+
+  font-size: 1.25rem;
 }
 .markup__overlay {
   position: absolute;
@@ -938,14 +945,14 @@ a {
   -ms-flex-pack: center;
   justify-content: center;
 
-  margin-top: 1px;
-  margin-left: 4px;
   padding: 20px;
 
   -webkit-transition: 0.5s;
           transition: 0.5s;
-  letter-spacing: 3px;
-  letter-spacing: 2.7px;
+  letter-spacing: 2.1px;
+  letter-spacing: 2px;
+
+  font-size: 1.25rem;
 }
 .web-design__overlay {
   position: absolute;
@@ -1028,14 +1035,14 @@ a {
   -ms-flex-pack: center;
   justify-content: center;
 
-  margin-top: 2px;
-  margin-left: 1px;
   padding: 20px;
 
   -webkit-transition: 0.5s;
           transition: 0.5s;
-  letter-spacing: 3px;
-  letter-spacing: 2.6px;
+  letter-spacing: 2.1px;
+  letter-spacing: 2px;
+
+  font-size: 1.25rem;
 }
 .quality-assurance__overlay {
   position: absolute;
@@ -1118,13 +1125,15 @@ a {
   -ms-flex-pack: center;
   justify-content: center;
 
-  margin-top: 2px;
+  margin-top: -1px;
   padding: 20px;
 
   -webkit-transition: 0.5s;
           transition: 0.5s;
-  letter-spacing: 3px;
-  letter-spacing: 2.6px;
+  letter-spacing: 2.1px;
+  letter-spacing: 2px;
+
+  font-size: 1.25rem;
 }
 .codding__overlay {
   position: absolute;
@@ -1144,7 +1153,7 @@ a {
   opacity: 95%;
 }
 
-qdding:hover .codding__image {
+.codding:hover .codding__image {
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
           transform: scale(1.2);
@@ -1207,14 +1216,14 @@ qdding:hover .codding__image {
   -ms-flex-pack: center;
   justify-content: center;
 
-  margin-top: 1px;
-  margin-left: 5px;
   padding: 20px;
 
   -webkit-transition: 0.5s;
           transition: 0.5s;
-  letter-spacing: 3px;
-  letter-spacing: 2.6px;
+  letter-spacing: 2.1px;
+  letter-spacing: 2px;
+
+  font-size: 1.25rem;
 }
 .adaptability__overlay {
   position: absolute;
@@ -1297,13 +1306,14 @@ qdding:hover .codding__image {
   -ms-flex-pack: center;
   justify-content: center;
 
-  margin-top: 2px;
-  margin-left: 6px;
   padding: 20px;
 
   -webkit-transition: 0.5s;
           transition: 0.5s;
-  letter-spacing: 3px;
+  letter-spacing: 2.1px;
+  letter-spacing: 2px;
+
+  font-size: 1.25rem;
 }
 .php__overlay {
   position: absolute;
@@ -1386,12 +1396,14 @@ qdding:hover .codding__image {
   -ms-flex-pack: center;
   justify-content: center;
 
-  margin-top: 2px;
   padding: 20px;
 
   -webkit-transition: 0.5s;
           transition: 0.5s;
-  letter-spacing: 3px;
+  letter-spacing: 2.1px;
+  letter-spacing: 2px;
+
+  font-size: 1.25rem;
 }
 .seo__overlay {
   position: absolute;
@@ -1579,7 +1591,6 @@ qdding:hover .codding__image {
 
   width: 100%;
   height: 62px;
-  padding-bottom: 3px;
   padding-left: 33px;
 
   -webkit-transition: background-color 0.5s, border-color 0.5s, color 0.5s;
@@ -1665,7 +1676,7 @@ qdding:hover .codding__image {
 }
 
 .posts__title {
-  margin-top: 102px;
+  margin-top: 103px;
 
   letter-spacing: 4px;
 
@@ -1731,7 +1742,7 @@ qdding:hover .codding__image {
      object-fit: cover;
 }
 .group-1__title--item {
-  margin-top: 71px;
+  margin-top: 72px;
   margin-left: 2px;
   padding-right: 5px;
   padding-left: 5px;
@@ -1751,7 +1762,9 @@ qdding:hover .codding__image {
 .group-1__description {
   max-width: 544px;
   margin: 0 auto;
-  margin-top: 23px;
+  margin-top: 22px;
+  padding-right: 0;
+  padding-left: 0;
 
   -webkit-transition: 0.5s;
           transition: 0.5s;
@@ -2266,10 +2279,6 @@ qdding:hover .codding__image {
 }
 
 @media (min-width: 240px) {
-  .group-1__description {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
   .group-3__description {
     padding-right: 20px;
     padding-left: 20px;
@@ -2290,7 +2299,7 @@ qdding:hover .codding__image {
 
 @media (min-height: 690px) {
   .grid-container {
-    grid-auto-rows: calc(33.3333333vh - 10px);
+    grid-auto-rows: calc(33.3333333vh - 13.3333333333px);
   }
 }
 
@@ -2401,9 +2410,6 @@ qdding:hover .codding__image {
     gap: 10px 10px;
     grid-template-areas: "html html css" "markup web-design web-design" "quality-assurance quality-assurance codding" "adaptability php codding" "adaptability seo seo";
     grid-template-columns: 1fr minmax(auto, 310px) 1fr;
-  }
-  .html__link {
-    margin-top: 1px;
   }
   .css__link {
     margin-top: 1px;
@@ -2968,7 +2974,7 @@ qdding:hover .codding__image {
 
 @media (max-height: 690px) {
   .grid-container {
-    grid-auto-rows: 217px;
+    grid-auto-rows: 216.8px;
   }
 }
 
@@ -3229,6 +3235,10 @@ qdding:hover .codding__image {
   .skills-btn__box {
     max-width: 100%;
     margin-right: 20px;
+    padding-left: 20px;
+  }
+  .group-1__description {
+    padding-right: 20px;
     padding-left: 20px;
   }
 }
