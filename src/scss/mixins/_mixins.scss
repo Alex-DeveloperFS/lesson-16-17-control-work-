@@ -100,9 +100,10 @@
   line-height: 20px;
   color: $color-gray;
   font-weight: 700;
-  font-family: $font-main;
+  font-family: $font-header;
   text-align: center;
   transition: 0.5s;
+
 }
 
 @mixin posts__description {
