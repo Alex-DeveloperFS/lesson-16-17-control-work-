@@ -604,7 +604,6 @@ a {
 
 .section-skills {
   padding: 10px;
-  padding-bottom: 0;
 }
 
 .grid-container {
@@ -2363,9 +2362,6 @@ a {
     gap: 20px;
   }
   .grid-container {
-    padding-right: 10px;
-    padding-left: 10px;
-
     gap: 10px 10px;
     grid-template-areas: "html html css" "markup web-design web-design" "quality-assurance quality-assurance codding" "adaptability php codding" "adaptability seo seo";
     grid-template-columns: 1fr minmax(auto, 310px) 1fr;
@@ -2893,9 +2889,11 @@ a {
     -ms-flex-direction: column;
         flex-direction: column;
   }
+  .section-skills {
+    padding: 20px;
+  }
   .grid-container {
     margin-bottom: 0;
-    padding: 20px;
 
     gap: 20px 10px;
     grid-template-areas: "html" "css" "markup" "web-design" "quality-assurance" "codding" "adaptability" "php" "seo";
@@ -2956,8 +2954,7 @@ a {
   }
   .skills-btn__box {
     max-width: 100%;
-    margin-right: 20px;
-    padding-left: 20px;
+    margin-top: 20px;
   }
   .skills__btn--item {
     width: 100%;
@@ -3104,21 +3101,10 @@ a {
   .btn--dark {
     min-width: 100%;
   }
-  .grid-container {
-    padding: 20px;
-  }
   .php__link {
     margin-left: 2px;
   }
   .about__picture {
     margin-left: 0;
-  }
-}
-
-@media (max-width: 240px) {
-  .skills-btn__box {
-    max-width: 100%;
-    margin-right: 20px;
-    padding-left: 20px;
   }
 }

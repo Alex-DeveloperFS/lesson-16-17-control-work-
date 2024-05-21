@@ -4,7 +4,11 @@
 
 .section-skills {
   padding: 10px;
-  padding-bottom: 0;
+
+  @include sm {
+    padding: 20px;
+  }
+
 }
 
 .grid-container {
@@ -18,8 +22,6 @@
   margin-bottom: 20px;
 
   @include lg {
-    padding-right: 10px;
-    padding-left: 10px;
     gap: 10px 10px;
     grid-template-areas:
         "html html css"
@@ -53,14 +55,10 @@
       "adaptability"
       "php"
       "seo";
-    padding: 20px;
     margin-bottom: 0;
     gap: 20px 10px;
   }
 
-  @include xs {
-    padding: 20px;
-  }
 
   @include height-690px-min {
     grid-auto-rows: calc(33.3333333vh - 13.3333333333333px);
@@ -569,15 +567,9 @@
 
   @include sm {
    max-width: 100%;
-    margin-right: 20px;
-    padding-left: 20px;
+    margin-top: 20px;
   }
 
-  @include xxs {
-   max-width: 100%;
-    margin-right: 20px;
-    padding-left: 20px;
-  }
 }
 
 .skills__btn--item {
