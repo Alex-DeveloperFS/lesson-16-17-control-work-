@@ -3,23 +3,22 @@
 
 .section-about {
   background-color: $color-gray-light;
-  margin-top: 40px;
+  margin-top: 30px;
   padding-top: 79px;
   padding-bottom: 63px;
 
   @include lg {
     padding-top: 0;
     padding-bottom: 74px;
-    margin-top: 42px;
   }
 
   @include md {
     padding-bottom: 53px;
-    margin-top: 41px;
+
   }
 
   @include sm {
-    margin-top: 20px;
+    margin-top: 0;
     padding-bottom: 67px;
   }
 }

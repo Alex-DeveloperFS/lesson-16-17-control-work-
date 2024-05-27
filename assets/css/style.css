@@ -1450,7 +1450,7 @@ a {
 }
 
 .section-about {
-  margin-top: 40px;
+  margin-top: 30px;
   padding-top: 79px;
   padding-bottom: 63px;
 
@@ -2420,7 +2420,6 @@ a {
     letter-spacing: 2px;
   }
   .section-about {
-    margin-top: 42px;
     padding-top: 0;
     padding-bottom: 74px;
   }
@@ -2698,7 +2697,7 @@ a {
     letter-spacing: 1.3px;
   }
   .skills-btn__box {
-    padding-left: 2px;
+    padding-left: 10px;
   }
   .skills__btn--item {
     min-height: 60px;
@@ -2706,7 +2705,6 @@ a {
     padding-left: 2px;
   }
   .section-about {
-    margin-top: 41px;
     padding-bottom: 53px;
   }
   .about__title {
@@ -2877,7 +2875,7 @@ a {
 
     letter-spacing: 2.5px;
   }
-  .header-content {
+  .header-content__actions {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2955,6 +2953,7 @@ a {
   .skills-btn__box {
     max-width: 100%;
     margin-top: 20px;
+    padding-left: 0;
   }
   .skills__btn--item {
     width: 100%;
@@ -2964,7 +2963,7 @@ a {
     letter-spacing: 1.8px;
   }
   .section-about {
-    margin-top: 20px;
+    margin-top: 0;
     padding-bottom: 67px;
   }
   .about__container {
