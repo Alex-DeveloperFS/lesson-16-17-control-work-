@@ -143,12 +143,10 @@
     &__text p:first-of-type::after {
       position: absolute;
       top: 0;
-      width: 2px;
       height: 200px;
       content: "";
-      background-color: black;
-      opacity: 10%;
       right: -58px;
+      border: 1px solid #707070;
 
       @include lg {
         top: -6px;

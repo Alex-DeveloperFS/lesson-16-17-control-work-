@@ -1,7 +1,7 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
 
-.header__navbar {
+.header-navbar {
 
   &--list {
     display: grid;
@@ -22,7 +22,7 @@
 
     @include md {
       position: absolute;
-      top: 93px;
+      top: 115px;
       right: 30px;
       background-color: rgba($color-gray-dark, 1);
       display: none;

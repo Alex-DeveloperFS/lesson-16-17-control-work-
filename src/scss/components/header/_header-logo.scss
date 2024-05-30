@@ -6,15 +6,6 @@
   &__logo {
 
     &--link {
-      //display: block;
-      //margin-top: 0;
-      //margin-left: 1.1px;
-      //text-decoration: none;
-      //letter-spacing: 5.7px;
-      //color: #ffffff;
-      //font-size: 1.5rem;
-      //font-weight: 400;
-
       display: block;
       letter-spacing: 0.22em;
       font-size: 1.5rem;
@@ -31,11 +22,6 @@
     }
 
     &--span {
-    //  margin-left: -2px;
-    //  padding: 12px 0 13px 3px;
-    //  border: solid #d53d27 3px;
-    //  line-height: 1.758rem;
-
       display: inline-block;
       margin-right: 4px;
       padding: 14px 1px 13px 4.5px;
@@ -46,11 +32,8 @@
       }
 
       &-logo {
-        //margin-left: 5px;
-
         margin-left: -1px;
         letter-spacing: 4.9px;
-
       }
     }
   }
