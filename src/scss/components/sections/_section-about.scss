@@ -146,7 +146,11 @@
       height: 200px;
       content: "";
       right: -58px;
-      border: 1px solid #707070;
+      width: 2px;
+      background-color: rgba(99, 117, 136, 0.1);
+
+
+
 
       @include lg {
         top: -6px;

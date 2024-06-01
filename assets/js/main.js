@@ -8,6 +8,6 @@
 $(document).ready(function () {
   $('.header-navbar__hamburger').on('click', function () {
     $(this).toggleClass('active')
-    $('.header__navbar--list').stop(true, true).slideToggle(500)
+    $('.header-navbar--list').stop(true, true).slideToggle(500)
   })
 })

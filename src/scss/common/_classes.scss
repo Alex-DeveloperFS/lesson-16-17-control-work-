@@ -74,13 +74,13 @@
 .btn--dark {
   min-width: 350px;
   min-height: 60px;
-  background-color: #575E74;
+  background-color: $color-btn;
   border: 2px solid $color-primary;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 0.5s;
-  opacity: 0.800;
+  //opacity: 0.800;
 
   &:hover {
     background-color: $color-accent;
