@@ -1,3 +1,4 @@
+@use "sass:math";
 $font-header: "Roboto Slab", serif;
 $font-main: "Roboto", sans-serif;
 $font-size: 16px;
@@ -14,9 +15,19 @@ $xxs: 240px;
 $height-690px: 690px;
 
 $gap: 20px;
-$gap-sm: ($gap / 2); // 10px
+$gap-sm: calc($gap / 2); // 10px
 $gap-lg: $gap * 1.5; // 30px
 $gap-x2: $gap * 2; // 40px
 $gap-x3: $gap * 3; // 60px
 $gap-x4: $gap * 4; // 80px
 $gap-x5: $gap * 5; // 100px
+
+$color-primary: #2d3651;
+$color-accent: #d66926;
+$color-highlight: #d53d27;
+$color-gray: #637588;
+$color-gray-light: #E5E5E53F;
+$color-gray-dark: #44596e;
+$color-black: #000000;
+$color-white: #ffffff;
+$color-btn: #575E74;
