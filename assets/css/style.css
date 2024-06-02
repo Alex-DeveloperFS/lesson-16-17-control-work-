@@ -464,7 +464,7 @@ a {
   grid-template-columns: auto 1fr;
 }
 
-.header-menu__logo-link {
+.header-menu__link {
   display: block;
 
   margin-left: -2px;
@@ -473,18 +473,13 @@ a {
 
   font-size: 1.5rem;
 }
-.header-menu__logo-span {
+.header-menu__span {
   display: inline-block;
 
   margin-right: 4px;
   padding: 14px 1px 13px 4.5px;
 
   border: 3px solid #d53d27;
-}
-.header-menu__logo-span-logo {
-  margin-left: -1px;
-
-  letter-spacing: 4.9px;
 }
 
 .header-navbar--list {
@@ -2378,10 +2373,10 @@ input::placeholder {
     margin-left: 0;
     padding-top: 29px;
   }
-  .header-menu__logo-link {
+  .header-menu__link {
     margin-left: 2px;
   }
-  .header-menu__logo-span {
+  .header-menu__span {
     margin-left: 0;
   }
   .header-navbar--list {
@@ -2646,7 +2641,7 @@ input::placeholder {
     -webkit-box-shadow: -3px 3px 20px -10px black;
             box-shadow: -3px 3px 20px -10px black;
   }
-  .header-menu__logo-link {
+  .header-menu__link {
     margin-top: 2px;
     margin-left: 1px;
   }
@@ -2898,7 +2893,7 @@ input::placeholder {
     font-weight: 300;
     line-height: 38px;
   }
-  .header-content__title--span {
+  .header-content__span {
     margin-left: 9px;
 
     letter-spacing: 2.5px;

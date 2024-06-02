@@ -5,7 +5,8 @@
 
   &__logo {
 
-    &-link {
+  }
+    &__link {
       display: block;
       letter-spacing: 0.22em;
       font-size: 1.5rem;
@@ -21,7 +22,7 @@
       }
     }
 
-    &-span {
+    &__span {
       display: inline-block;
       margin-right: 4px;
       padding: 14px 1px 13px 4.5px;
@@ -30,11 +31,5 @@
       @include lg {
         margin-left: 0
       }
-
-      &-logo {
-        margin-left: -1px;
-        letter-spacing: 4.9px;
-      }
     }
   }
-}
