@@ -464,7 +464,7 @@ a {
   grid-template-columns: auto 1fr;
 }
 
-.header-menu__link {
+.header-logo__link {
   display: block;
 
   margin-left: -2px;
@@ -473,7 +473,7 @@ a {
 
   font-size: 1.5rem;
 }
-.header-menu__span {
+.header-logo__accent {
   display: inline-block;
 
   margin-right: 4px;
@@ -2373,10 +2373,10 @@ input::placeholder {
     margin-left: 0;
     padding-top: 29px;
   }
-  .header-menu__link {
+  .header-logo__link {
     margin-left: 2px;
   }
-  .header-menu__span {
+  .header-logo__accent {
     margin-left: 0;
   }
   .header-navbar--list {
@@ -2641,7 +2641,7 @@ input::placeholder {
     -webkit-box-shadow: -3px 3px 20px -10px black;
             box-shadow: -3px 3px 20px -10px black;
   }
-  .header-menu__link {
+  .header-logo__link {
     margin-top: 2px;
     margin-left: 1px;
   }
@@ -2893,7 +2893,7 @@ input::placeholder {
     font-weight: 300;
     line-height: 38px;
   }
-  .header-content__span {
+  .header-content__accent {
     margin-left: 9px;
 
     letter-spacing: 2.5px;

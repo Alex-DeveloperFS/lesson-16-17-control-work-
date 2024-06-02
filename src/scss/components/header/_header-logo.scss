@@ -1,35 +1,32 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
 
-.header-menu {
+.header-logo {
 
-  &__logo {
+  &__link {
+    display: block;
+    letter-spacing: 0.22em;
+    font-size: 1.5rem;
+    margin-left: -2px;
 
-  }
-    &__link {
-      display: block;
-      letter-spacing: 0.22em;
-      font-size: 1.5rem;
-      margin-left: -2px;
-
-      @include lg {
-        margin-left: 2px;
-      }
-
-      @include md {
-        margin-left: 1px;
-        margin-top: 2px;
-      }
+    @include lg {
+      margin-left: 2px;
     }
 
-    &__span {
-      display: inline-block;
-      margin-right: 4px;
-      padding: 14px 1px 13px 4.5px;
-      border: 3px solid #d53d27;
-
-      @include lg {
-        margin-left: 0
-      }
+    @include md {
+      margin-left: 1px;
+      margin-top: 2px;
     }
   }
+
+  &__accent {
+    display: inline-block;
+    margin-right: 4px;
+    padding: 14px 1px 13px 4.5px;
+    border: 3px solid #d53d27;
+
+    @include lg {
+      margin-left: 0
+    }
+  }
+}
