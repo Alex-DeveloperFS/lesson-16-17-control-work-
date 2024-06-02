@@ -377,7 +377,7 @@ a {
   text-align: center;
   letter-spacing: 4.8px;
 
-  color: rgba(229, 229, 229, 0.25);
+  color: rgba(229, 229, 229, 0.2470588235);
 
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -1453,7 +1453,7 @@ a {
   padding-top: 79px;
   padding-bottom: 63px;
 
-  background-color: rgba(229, 229, 229, 0.25);
+  background-color: rgba(229, 229, 229, 0.2470588235);
 }
 
 .about__container {
