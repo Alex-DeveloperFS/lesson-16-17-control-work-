@@ -2,7 +2,7 @@
 @use "../../mixins" as *;
 @use "../../common" as *;
 
-.section-skills {
+.skills {
   padding: 10px;
 
   @include sm {
@@ -11,7 +11,7 @@
 
 }
 
-.grid-container {
+.skills__container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px 10px;
@@ -69,7 +69,7 @@
   }
 }
 
-.html {
+.skills-html {
   grid-area: html;
   @include skills;
 
@@ -113,19 +113,19 @@
   }
 }
 
-.html:hover .html__overlay {
+.skills-html:hover .skills-html__overlay {
   opacity: 95%;
 }
 
-.html:hover .html__image {
+.skills-html:hover .skills-html__image {
   transform: scale(1.2);
 }
 
-.html:hover .html__link {
+.skills-html:hover .skills-html__link {
   color: $color-accent;
 }
 
-.css {
+.skills-css {
   grid-area: css;
   @include skills;
 
@@ -163,19 +163,19 @@
   }
 }
 
-.css:hover .css__overlay {
+.skills-css:hover .skills-css__overlay {
   opacity: 95%;
 }
 
-.css:hover .css__image {
+.skills-css:hover .skills-css__image {
   transform: scale(1.2);
 }
 
-.css:hover .css__link {
+.skills-css:hover .skills-css__link {
   color: $color-accent;
 }
 
-.markup {
+.skills-markup {
   grid-area: markup;
   @include skills;
 
@@ -216,19 +216,19 @@
   }
 }
 
-.markup:hover .markup__overlay {
+.skills-markup:hover .skills-markup__overlay {
   opacity: 95%;
 }
 
-.markup:hover .markup__image {
+.skills-markup:hover .skills-markup__image {
   transform: scale(1.2);
 }
 
-.markup:hover .markup__link {
+.skills-markup:hover .skills-markup__link {
   color: $color-accent;
 }
 
-.web-design {
+.skills-webDesign {
   grid-area: web-design;
   @include skills;
 
@@ -271,19 +271,19 @@
   }
 }
 
-.web-design:hover .web-design__overlay {
+.skills-webDesign:hover .skills-webDesign__overlay {
   opacity: 95%;
 }
 
-.web-design:hover .web-design__image {
+.skills-webDesign:hover .skills-webDesign__image {
   transform: scale(1.2);
 }
 
-.web-design:hover .web-design__link {
+.skills-webDesign:hover .skills-webDesign__link {
   color: $color-accent;
 }
 
-.quality-assurance {
+.skills-qualityAssurance {
   grid-area: quality-assurance;
   @include skills;
 
@@ -325,19 +325,19 @@
   }
 }
 
-.quality-assurance:hover .quality-assurance__overlay {
+.skills-qualityAssurance:hover .skills-qualityAssurance__overlay {
   opacity: 95%;
 }
 
-.quality-assurance:hover .quality-assurance__image {
+.skills-qualityAssurance:hover .skills-qualityAssurance__image {
   transform: scale(1.2);
 }
 
-.quality-assurance:hover .quality-assurance__link {
+.skills-qualityAssurance:hover .skills-qualityAssurance__link {
   color: $color-accent;
 }
 
-.codding {
+.skills-codding {
   grid-area: codding;
   @include skills;
 
@@ -378,18 +378,18 @@
   }
 }
 
-.codding:hover .codding__overlay {
+.skills-codding:hover .skills-codding__overlay {
   opacity: 95%;
 }
-.codding:hover .codding__image {
+.skills-codding:hover .skills-codding__image {
   transform: scale(1.2);
 }
 
-.codding:hover .codding__link {
+.skills-codding:hover .skills-codding__link {
   color: $color-accent;
 }
 
-.adaptability {
+.skills-adaptability {
   grid-area: adaptability;
   @include skills;
 
@@ -430,19 +430,19 @@
   }
 }
 
-.adaptability:hover .adaptability__overlay {
+.skills-adaptability:hover .skills-adaptability__overlay {
   opacity: 95%;
 }
 
-.adaptability:hover .adaptability__image {
+.skills-adaptability:hover .skills-adaptability__image {
   transform: scale(1.2);
 }
 
-.adaptability:hover .adaptability__link {
+.skills-adaptability:hover .skills-adaptability__link {
   color: $color-accent
 }
 
-.php {
+.skills-php {
   grid-area: php;
   @include skills;
 
@@ -493,19 +493,19 @@
   }
 }
 
-.php:hover .php__overlay {
+.skills-php:hover .skills-php__overlay {
   opacity: 95%;
 }
 
-.php:hover .php__image {
+.skills-php:hover .skills-php__image {
   transform: scale(1.2);
 }
 
-.php:hover .php__link {
+.skills-php:hover .skills-php__link {
   color: $color-accent
 }
 
-.seo {
+.skills-seo {
   grid-area: seo;
   @include skills;
 
@@ -544,19 +544,19 @@
   }
 }
 
-.seo:hover .seo__overlay {
+.skills-seo:hover .skills-seo__overlay {
   opacity: 95%;
 }
 
-.seo:hover .seo__image {
+.skills-seo:hover .skills-seo__image {
   transform: scale(1.2);
 }
 
-.seo:hover .seo__link {
+.skills-seo:hover .skills-seo__link {
   color: $color-accent;
 }
 
-.skills-btn__box {
+.skills-actions {
   display: flex;
   justify-content: center;
   margin-left: 0;
@@ -572,7 +572,7 @@
   }
 }
 
-.skills__btn--item {
+.skills-actions__item {
   min-height: 60px;
   letter-spacing: 1.8px;
 

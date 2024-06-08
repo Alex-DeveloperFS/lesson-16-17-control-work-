@@ -1,7 +1,7 @@
 @use "../../presets" as *;
 @use "../../mixins/index" as *;
 
-.section-about {
+.about {
   background-color: $color-gray-light;
   margin-top: 30px;
   padding-top: 79px;
@@ -21,9 +21,7 @@
     margin-top: 0;
     padding-bottom: 67px;
   }
-}
 
-.about {
   &__container {
     @extend %container;
     display: grid;
@@ -48,153 +46,152 @@
     }
   }
 
-  &__text {
+  &-content {
     grid-area: about__text;
-  }
 
-  &__title {
-    font-size: 40px;
-    letter-spacing: 3.65px;
-    line-height: 48px;
-    color: $color-primary;
-    font-weight: 700;
-    font-family: $font-header;
-    margin-top: 20px;
 
-    @include lg {
-      margin-top: 79px;
-      letter-spacing: 2.88px;
-      font-size: 32px;
-      line-height: 40px;
-      margin-left: 0px;
-    }
-
-    @include md {
-      letter-spacing: 2.2px;
-      font-size: 24px;
-      line-height: 32px;
-      margin-top: 58px;
-      margin-left: 2px;
-    }
-
-    @include sm {
-      text-align: center;
-      margin-top: 57px;
-    }
-
-    &--span {
-      letter-spacing: 4.22px;
+    &__title {
+      font-size: 40px;
+      letter-spacing: 3.65px;
+      line-height: 48px;
+      color: $color-primary;
+      font-weight: 700;
+      font-family: $font-header;
+      margin-top: 20px;
 
       @include lg {
-        letter-spacing: 3.36px;
+        margin-top: 79px;
+        letter-spacing: 2.88px;
+        font-size: 32px;
+        line-height: 40px;
+        margin-left: 0px;
       }
 
       @include md {
-        letter-spacing: 2.5px;
-      }
-    }
-  }
-
-  &__description--box {
-    display: flex;
-    flex-direction: column;
-    row-gap: 16px;
-    margin-top: 50px;
-    position: relative;
-
-    @include lg {
-      margin-top: 34px;
-      max-width: 630px;
-    }
-
-    @include md {
-      max-width: 414px;
-      margin-top: 23px;
-      margin-left: 2px;
-    }
-
-    @include sm {
-      max-width: 532px;
-      margin-top: 22px;
-    }
-  }
-
-  &__description--item {
-    font-size: 18px;
-    letter-spacing: 0.89px;
-    line-height: 24px;
-    color: $color-gray;
-    font-weight: 400;
-    font-family: $font-main;
-
-    @include lg {
-      letter-spacing: 1.8px;
-    }
-
-    @include lg {
-      font-size: 16px;
-      letter-spacing: 0.8px;
-    }
-    @include md {
-      margin-top: 1px;
-    }
-  }
-
-    &__text p:first-of-type::after {
-      position: absolute;
-      top: 0;
-      height: 200px;
-      content: "";
-      right: -58px;
-      width: 2px;
-      background-color: rgba(99, 117, 136, 0.1);
-
-
-
-
-      @include lg {
-        top: -6px;
-        right: -25px;
-      }
-
-      @include md {
-        top: 5px;
-        right: -20px;
+        letter-spacing: 2.2px;
+        font-size: 24px;
+        line-height: 32px;
+        margin-top: 58px;
+        margin-left: 2px;
       }
 
       @include sm {
-        display: none;
+        text-align: center;
+        margin-top: 57px;
+      }
+
+      &--span {
+        letter-spacing: 4.22px;
+
+        @include lg {
+          letter-spacing: 3.36px;
+        }
+
+        @include md {
+          letter-spacing: 2.5px;
+        }
       }
     }
 
-    &__picture {
-      grid-area: about__picture;
-      margin-top: 22px;
-      display: grid;
-      align-content: center;
-      justify-items: center;
+    &__descriptions {
+      display: flex;
+      flex-direction: column;
+      row-gap: 16px;
+      margin-top: 50px;
+      position: relative;
 
       @include lg {
-        margin-top: 20px;
-        margin-left: 15px;
+        margin-top: 34px;
+        max-width: 630px;
       }
 
       @include md {
-        margin-top: 20px;
-        margin-left: 0;
+        max-width: 414px;
+        margin-top: 23px;
+        margin-left: 2px;
       }
 
       @include sm {
-        margin-top: 26px;
-        margin-left: 0;
-      }
-
-      @include xs {
-        margin-left: 0;
+        max-width: 532px;
+        margin-top: 22px;
       }
     }
 
-    &__image {
+    &__item {
+      font-size: 18px;
+      letter-spacing: 0.89px;
+      line-height: 24px;
+      color: $color-gray;
+      font-weight: 400;
+      font-family: $font-main;
+
+      @include lg {
+        letter-spacing: 1.8px;
+      }
+
+      @include lg {
+        font-size: 16px;
+        letter-spacing: 0.8px;
+      }
+      @include md {
+        margin-top: 1px;
+      }
+    }
+  }
+
+  &-content p:first-of-type::after {
+    position: absolute;
+    top: 0;
+    height: 200px;
+    content: "";
+    right: -58px;
+    width: 2px;
+    background-color: rgba(99, 117, 136, 0.1);
+
+
+    @include lg {
+      top: -6px;
+      right: -25px;
+    }
+
+    @include md {
+      top: 5px;
+      right: -20px;
+    }
+
+    @include sm {
+      display: none;
+    }
+  }
+
+  &-picture {
+    grid-area: about__picture;
+    margin-top: 22px;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+
+    @include lg {
+      margin-top: 20px;
+      margin-left: 15px;
+    }
+
+    @include md {
+      margin-top: 20px;
+      margin-left: 0;
+    }
+
+    @include sm {
+      margin-top: 26px;
+      margin-left: 0;
+    }
+
+    @include xs {
+      margin-left: 0;
+    }
+
+
+    &__item {
 
       @include lg {
         max-width: 255px;
@@ -205,10 +202,10 @@
         max-width: 236px;
         max-height: 425px;
       }
-     @include sm {
+      @include sm {
         max-width: 271px;
         max-height: 487px;
       }
     }
   }
-
+}

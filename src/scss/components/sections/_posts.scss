@@ -2,88 +2,89 @@
 @use "../../mixins" as *;
 @use "../../common" as *;
 
-.section-posts {
+.posts {
   @extend %container;
-}
 
-.posts__title {
-  font-size: 40px;
-  letter-spacing: 4px;
-  line-height: 48px;
-  color: $color-primary;
-  font-weight: 700;
-  font-family: $font-header;
-  margin-top: 103px;
 
-  @include lg {
-    font-size: 32px;
-    letter-spacing: 3.2px;
-    line-height: 40px;
-    margin-top: 79px;
+  &__title {
+    font-size: 40px;
+    letter-spacing: 4px;
+    line-height: 48px;
+    color: $color-primary;
+    font-weight: 700;
+    font-family: $font-header;
+    margin-top: 103px;
+
+    @include lg {
+      font-size: 32px;
+      letter-spacing: 3.2px;
+      line-height: 40px;
+      margin-top: 79px;
+    }
+
+    @include md {
+      letter-spacing: 2.4px;
+      font-size: 24px;
+      line-height: 32px;
+      margin-top: 57px;
+      margin-left: 2px;
+    }
+
+    @include sm {
+      text-align: center;
+    }
   }
 
-  @include md {
-    letter-spacing: 2.4px;
-    font-size: 24px;
-    line-height: 32px;
-    margin-top: 57px;
-    margin-left: 2px;
-  }
-
-  @include sm {
-    text-align: center;
-  }
-}
-
-.posts__box {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 20px 20px;
-  grid-template-areas:
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 20px;
+    grid-template-areas:
     "gr1 gr1 gr2 gr3"
     "gr4 gr5 gr6 gr6";
-  margin-top: 56px;
+    margin-top: 56px;
 
-  @include lg {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
+    @include lg {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
     "gr1 gr1 gr2"
     "gr3 gr4 gr4"
     "gr5 gr5 gr6";
-    margin-top: 43px;
-  }
+      margin-top: 43px;
+    }
 
-  @include md {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
+    @include md {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
     "gr1 gr2"
     "gr3 gr4"
     "gr5 gr6";
-    margin-top: 28px;
-    padding-left: 2px;
-    padding-right: 1px;
-  }
+      margin-top: 28px;
+      padding-left: 2px;
+      padding-right: 1px;
+    }
 
-  @include sm {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas:
+    @include sm {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 1fr);
+      grid-template-areas:
     "gr1"
     "gr2"
     "gr3"
     "gr4"
     "gr5"
     "gr6";
-    margin-top: 32px;
-    padding-left: 2px;
-    padding-right: 1px;
+      margin-top: 32px;
+      padding-left: 2px;
+      padding-right: 1px;
+    }
   }
 }
 
-.group-1 {
+.post-first {
   grid-area: gr1;
 
   &__link {
@@ -98,12 +99,12 @@
     height: 100%;
   }
 
-  &__image-block {
+  &__image {
     grid-area: p1;
     @include posts__image-block;
   }
 
-  &__text-box {
+  &__text {
     grid-area: t1;
     display: grid;
     align-content: center;
@@ -144,11 +145,11 @@
     }
   }
 
-  &__image {
+  &__item {
     @include posts__image;
   }
 
-  &__title--item {
+  &__title {
     @include posts__title--item;
     letter-spacing: 0.87px;
   }
@@ -158,11 +159,11 @@
     @include posts__description;
   }
 
-  &:hover &__image {
+  &:hover &__item {
     transform: scale(1.1);
   }
 
-  &:hover &__title--item {
+  &:hover &__title {
     color: $color-primary;
   }
 
@@ -175,7 +176,7 @@
   }
 }
 
-.group-2 {
+.post-second {
   grid-area: gr2;
 
   &__link {
@@ -191,12 +192,12 @@
     height: 100%;
   }
 
-  &__image-block {
+  &__image {
     grid-area: p2;
     @include posts__image-block;
   }
 
-  &__text-box {
+  &__text {
     grid-area: t2;
     display: grid;
     align-content: center;
@@ -233,11 +234,11 @@
   }
 
 
-  &__image {
+  &__item {
     @include posts__image;
   }
 
-  &__title--item {
+  &__title {
     @include posts__title--item;
     letter-spacing: 0.9px;
 
@@ -253,7 +254,7 @@
     }
 
     @include sm {
-margin-top: 22px;
+      margin-top: 22px;
     }
   }
 
@@ -276,11 +277,11 @@ margin-top: 22px;
     }
   }
 
-  &:hover &__image {
+  &:hover &__item {
     transform: scale(1.1);
   }
 
-  &:hover &__title--item {
+  &:hover &__title {
     color: $color-primary;
   }
 
@@ -293,7 +294,7 @@ margin-top: 22px;
   }
 }
 
-.group-3 {
+.post-third {
   grid-area: gr3;
 
   &__link {
@@ -308,12 +309,12 @@ margin-top: 22px;
     height: 100%;
   }
 
-  &__image-block {
+  &__image {
     grid-area: p3;
     @include posts__image-block;
   }
 
-  &__text-box {
+  &__text {
     grid-area: t3;
     display: grid;
     align-content: center;
@@ -345,11 +346,11 @@ margin-top: 22px;
     }
   }
 
-  &__image {
+  &__item {
     @include posts__image;
   }
 
-  &__title--item {
+  &__title {
     @include posts__title--item;
     letter-spacing: 1px;
 
@@ -379,11 +380,11 @@ margin-top: 22px;
     }
   }
 
-  &:hover &__image {
+  &:hover &__item {
     transform: scale(1.1);
   }
 
-  &:hover &__title--item {
+  &:hover &__title {
     color: $color-primary;
   }
 
@@ -396,7 +397,7 @@ margin-top: 22px;
   }
 }
 
-.group-4 {
+.post-fourth {
   grid-area: gr4;
 
   &__link {
@@ -412,12 +413,12 @@ margin-top: 22px;
     height: 100%;
   }
 
-  &__image-block {
+  &__image {
     grid-area: p4;
     @include posts__image-block;
   }
 
-  &__text-box {
+  &__text {
     grid-area: t4;
     display: grid;
     align-content: center;
@@ -450,11 +451,11 @@ margin-top: 22px;
     }
   }
 
-  &__image {
+  &__item {
     @include posts__image;
   }
 
-  &__title--item {
+  &__title {
     @include posts__title--item;
     letter-spacing: 1px;
 
@@ -474,11 +475,11 @@ margin-top: 22px;
     }
   }
 
-  &:hover &__image {
+  &:hover &__item {
     transform: scale(1.1);
   }
 
-  &:hover &__title--item {
+  &:hover &__title {
     color: $color-primary;
   }
 
@@ -491,7 +492,7 @@ margin-top: 22px;
   }
 }
 
-.group-5 {
+.post-fifth {
   grid-area: gr5;
 
   &__link {
@@ -506,12 +507,12 @@ margin-top: 22px;
     height: 100%;
   }
 
-  &__image-block {
+  &__image {
     grid-area: p5;
     @include posts__image-block;
   }
 
-  &__text-box {
+  &__text {
     grid-area: t5;
     display: grid;
     align-content: center;
@@ -547,11 +548,11 @@ margin-top: 22px;
     }
   }
 
-  &__image {
+  &__item {
     @include posts__image;
   }
 
-  &__title--item {
+  &__title {
     @include posts__title--item;
     letter-spacing: 1px;
     padding-left: 3px;
@@ -584,11 +585,11 @@ margin-top: 22px;
     }
   }
 
-  &:hover &__image {
+  &:hover &__item {
     transform: scale(1.1);
   }
 
-  &:hover &__title--item {
+  &:hover &__title {
     color: $color-primary;
   }
 
@@ -601,7 +602,7 @@ margin-top: 22px;
   }
 }
 
-.group-6 {
+.post-sixth {
   grid-area: gr6;
 
   &__link {
@@ -618,12 +619,12 @@ margin-top: 22px;
     height: 100%;
   }
 
-  &__image-block {
+  &__image {
     grid-area: p6;
     @include posts__image-block;
   }
 
-  &__text-box {
+  &__text {
     grid-area: t6;
     display: grid;
     align-content: center;
@@ -664,18 +665,13 @@ margin-top: 22px;
   }
 
 
-  &__image {
+  &__item {
     @include posts__image;
   }
 
-  &__title--item {
+  &__title {
     @include posts__title--item;
     letter-spacing: 0.88px;
-
-
-    @include sm {
-
-    }
   }
 
   &__description {
@@ -688,11 +684,11 @@ margin-top: 22px;
     }
   }
 
-  &:hover &__image {
+  &:hover &__item {
     transform: scale(1.1);
   }
 
-  &:hover &__title--item {
+  &:hover &__title {
     color: $color-primary;
   }
 
@@ -705,7 +701,7 @@ margin-top: 22px;
   }
 }
 
-.posts-btn__box {
+.posts__actions {
   display: flex;
   justify-content: center;
   margin-top: 20px;
@@ -723,17 +719,16 @@ margin-top: 22px;
     max-width: 532px;
     margin-left: 2px;
   }
-}
 
-.posts__btn--item {
-  padding-left: 2px;
-  letter-spacing: 1.8px;
-
-  @include sm {
-    padding-left: 6px;
+  &--item {
+    padding-left: 2px;
     letter-spacing: 1.8px;
-    width: 100%;
+
+    @include sm {
+      padding-left: 6px;
+      letter-spacing: 1.8px;
+      width: 100%;
+    }
   }
 }
-
 

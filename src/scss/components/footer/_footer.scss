@@ -21,7 +21,7 @@
     align-items: center;
   }
 
-  &__svg--list {
+  &__social {
     display: flex;
     position: relative;
     margin-top: 45px;
@@ -40,14 +40,15 @@
       content: "";
       background-color: rgba(255, 255, 255, 0.1);
     }
-  }
 
-  &__svg__item {
-    font-size: 36px;
-    transition: 0.5s;
 
-    &:hover {
-      color: $color-accent;
+    &--link {
+      font-size: 36px;
+      transition: 0.5s;
+
+      &:hover {
+        color: $color-accent;
+      }
     }
   }
 

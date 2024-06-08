@@ -3,7 +3,7 @@
 
 .header-navbar {
 
-  &--list {
+  &__list {
     display: grid;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
@@ -29,7 +29,7 @@
     }
   }
 
-  &--link {
+  &__link {
     font-size: 1.125rem;
     line-height: 1.25rem;
     letter-spacing: 1.6px;
