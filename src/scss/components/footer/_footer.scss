@@ -21,7 +21,7 @@
     align-items: center;
   }
 
-  &__social {
+  &-social {
     display: flex;
     position: relative;
     margin-top: 45px;
@@ -42,7 +42,7 @@
     }
 
 
-    &--link {
+    &__link {
       font-size: 36px;
       transition: 0.5s;
 
@@ -52,14 +52,14 @@
     }
   }
 
-  &__copy {
+  &-copy {
     margin-top: 59px;
 
     @include md {
       margin-top: 60px;
     }
 
-    &--text-1 {
+    &__text-1 {
       font-size: 16px;
       letter-spacing: 4.8px;
       line-height: 20px;
@@ -71,7 +71,7 @@
       margin-left: 3px;
     }
 
-    &--text-2 {
+    &__text-2 {
       font-size: 16px;
       letter-spacing: 0.8px;
       line-height: 20px;

@@ -719,16 +719,17 @@
     max-width: 532px;
     margin-left: 2px;
   }
+}
 
-  &--item {
-    padding-left: 2px;
+.btn-post {
+  padding-left: 2px;
+  letter-spacing: 1.8px;
+
+  @include sm {
+    padding-left: 6px;
     letter-spacing: 1.8px;
-
-    @include sm {
-      padding-left: 6px;
-      letter-spacing: 1.8px;
-      width: 100%;
-    }
+    width: 100%;
   }
 }
+
 

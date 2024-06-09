@@ -79,17 +79,17 @@
         text-align: center;
         margin-top: 57px;
       }
+    }
 
-      &--span {
-        letter-spacing: 4.22px;
+    &__accent {
+      letter-spacing: 4.22px;
 
-        @include lg {
-          letter-spacing: 3.36px;
-        }
+      @include lg {
+        letter-spacing: 3.36px;
+      }
 
-        @include md {
-          letter-spacing: 2.5px;
-        }
+      @include md {
+        letter-spacing: 2.5px;
       }
     }
 
