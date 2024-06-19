@@ -1577,23 +1577,23 @@ a {
   background-color: rgba(255, 255, 255, 0.15);
 }
 .form-name__input:hover::-webkit-input-placeholder,
-.form-name__input :focus::-webkit-input-placeholder {
+.form-name__input:focus::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
 .form-name__input:hover::-moz-placeholder,
-.form-name__input :focus::-moz-placeholder {
+.form-name__input:focus::-moz-placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
 .form-name__input:hover:-ms-input-placeholder,
-.form-name__input :focus:-ms-input-placeholder {
+.form-name__input:focus:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
 .form-name__input:hover::-ms-input-placeholder,
-.form-name__input :focus::-ms-input-placeholder {
+.form-name__input:focus::-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
 .form-name__input:hover::placeholder,
-.form-name__input :focus::placeholder {
+.form-name__input:focus::placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
 .form-email {
@@ -1631,23 +1631,23 @@ a {
   background-color: rgba(255, 255, 255, 0.15);
 }
 .form-email__input:hover::-webkit-input-placeholder,
-.form-email__input :focus::-webkit-input-placeholder {
+.form-email__input:focus::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
 .form-email__input:hover::-moz-placeholder,
-.form-email__input :focus::-moz-placeholder {
+.form-email__input:focus::-moz-placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
 .form-email__input:hover:-ms-input-placeholder,
-.form-email__input :focus:-ms-input-placeholder {
+.form-email__input:focus:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
 .form-email__input:hover::-ms-input-placeholder,
-.form-email__input :focus::-ms-input-placeholder {
+.form-email__input:focus::-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
 .form-email__input:hover::placeholder,
-.form-email__input :focus::placeholder {
+.form-email__input:focus::placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
 .form-subscribe {
